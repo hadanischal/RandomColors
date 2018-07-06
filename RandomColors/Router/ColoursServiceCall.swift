@@ -8,6 +8,26 @@
 
 import Foundation
 
-class ColoursServiceCall {
-    
+protocol ColoursServiceCallProtocol: class {
+    func fetchConverter(_ completion: @escaping ((Result<ColoursModel, ErrorResult>) -> Void))
 }
+
+final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
+    static let shared = ColoursServiceCall()
+    let endpoint = APIConstants.baseURLString
+    var task : URLSessionTask?
+    
+    func fetchConverter(_ completion: @escaping ((Result<ColoursModel, ErrorResult>) -> Void)) {
+        self.cancelFetchService()
+        task = NetworkService().loadData(urlString: endpoint, completion: self.networkResult(completion: completion))
+        
+    }
+    
+    func cancelFetchService() {
+        if let task = task {
+            task.cancel()
+        }
+        task = nil
+    }
+}
+

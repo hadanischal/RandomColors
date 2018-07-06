@@ -12,17 +12,40 @@ class ColoursViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView?
     fileprivate let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
     fileprivate let itemsPerRow: CGFloat = 3
+    weak var service: ColoursServiceCallProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
         self.setupCollectionView()
+        self.fetchServiceCall()
     }
     
     func setupUI() {
         self.title = "Random Colours"
         self.view.backgroundColor = UIColor.white
     }
+    
+    func fetchServiceCall(_ completion: ((Result<Bool, ErrorResult>) -> Void)? = nil) {
+        self.service = ColoursServiceCall.shared
+        guard let service = service else {
+            // onErrorHandling?(ErrorResult.custom(string: "Missing service"))
+            return
+        }
+        service.fetchConverter { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let converter) :
+                    print(converter)
+                    completion?(Result.success(true))
+                case .failure(let error) :
+                    print(error)
+                    completion?(Result.failure(error))
+                }
+            }
+        }
+    }
+    
 }
 
 // MARK: UICollectionViewDataSource

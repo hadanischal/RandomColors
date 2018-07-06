@@ -12,6 +12,6 @@ class GenericDataSource<T>: NSObject {
     var data: DynamicValue<[T]> = DynamicValue([])
 }
 
-class ColoursViewDataSource: GenericDataSource<Any> {
+class ColoursViewDataSource: GenericDataSource<ColoursModel> {
     
 }
