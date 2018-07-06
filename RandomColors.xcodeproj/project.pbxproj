@@ -27,6 +27,8 @@
 		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
 		AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD820EF926D0030D852 /* Reachability.swift */; };
 		AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */; };
+		AFD92DDE20EF92E30030D852 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDD20EF92E30030D852 /* Result.swift */; };
+		AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDF20EF92F30030D852 /* ErrorResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 		AFD92DD820EF926D0030D852 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityError.swift; sourceTree = "<group>"; };
+		AFD92DDD20EF92E30030D852 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AFD92DDF20EF92F30030D852 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,7 @@
 			children = (
 				AFD92DD620EF92360030D852 /* APIConstants */,
 				AFD92DD720EF92500030D852 /* Reachability */,
+				AFD92DDC20EF92BF0030D852 /* Result */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -258,6 +263,15 @@
 				AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		AFD92DDC20EF92BF0030D852 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DDD20EF92E30030D852 /* Result.swift */,
+				AFD92DDF20EF92F30030D852 /* ErrorResult.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,7 +411,9 @@
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
+				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
+				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
 				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
