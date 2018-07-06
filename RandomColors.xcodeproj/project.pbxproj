@@ -38,6 +38,7 @@
 		AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */; };
 		AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF320EF98130030D852 /* DynamicValue.swift */; };
 		AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */; };
+		AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF820EF9D820030D852 /* ColoursModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewDataSource.swift; sourceTree = "<group>"; };
 		AFD92DF320EF98130030D852 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCall.swift; sourceTree = "<group>"; };
+		AFD92DF820EF9D820030D852 /* ColoursModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		AFD92DB820EF453A0030D852 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DF820EF9D820030D852 /* ColoursModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
 				AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
+				AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
 				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
