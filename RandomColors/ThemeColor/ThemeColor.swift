@@ -6,7 +6,7 @@
 //  Copyright © 2018 NischalHada. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum ThemeColor {
     static var primary: UIColor{
