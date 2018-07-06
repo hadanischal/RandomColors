@@ -15,6 +15,7 @@
 		AFD92D9020EF409D0030D852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8E20EF409D0030D852 /* LaunchScreen.storyboard */; };
 		AFD92D9B20EF409D0030D852 /* RandomColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D9A20EF409D0030D852 /* RandomColorsTests.swift */; };
 		AFD92DA620EF409D0030D852 /* RandomColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DA520EF409D0030D852 /* RandomColorsUITests.swift */; };
+		AFD92DB420EF427B0030D852 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AFD92DB320EF427B0030D852 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AFD92DA120EF409D0030D852 /* RandomColorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD92DA520EF409D0030D852 /* RandomColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITests.swift; sourceTree = "<group>"; };
 		AFD92DA720EF409E0030D852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD92DB320EF427B0030D852 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AFD92D7620EF409C0030D852 = {
 			isa = PBXGroup;
 			children = (
+				AFD92DB320EF427B0030D852 /* .gitignore */,
 				AFD92D8120EF409C0030D852 /* RandomColors */,
 				AFD92D9920EF409D0030D852 /* RandomColorsTests */,
 				AFD92DA420EF409D0030D852 /* RandomColorsUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD92DB420EF427B0030D852 /* .gitignore in Resources */,
 				AFD92D9020EF409D0030D852 /* LaunchScreen.storyboard in Resources */,
 				AFD92D8D20EF409D0030D852 /* Assets.xcassets in Resources */,
 				AFD92D8820EF409C0030D852 /* Main.storyboard in Resources */,
