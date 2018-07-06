@@ -37,6 +37,7 @@
 		AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */; };
 		AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */; };
 		AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF320EF98130030D852 /* DynamicValue.swift */; };
+		AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModel.swift; sourceTree = "<group>"; };
 		AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewDataSource.swift; sourceTree = "<group>"; };
 		AFD92DF320EF98130030D852 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				AFD92DEE20EF972C0030D852 /* ViewModels */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
 				AFD92DD020EF8C8E0030D852 /* Service */,
+				AFD92DF520EF9BF60030D852 /* Router */,
 				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
@@ -330,6 +333,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		AFD92DF520EF9BF60030D852 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -466,6 +477,7 @@
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
 				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
+				AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
