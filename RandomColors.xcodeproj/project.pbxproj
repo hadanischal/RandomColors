@@ -25,6 +25,8 @@
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
 		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
 		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
+		AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD820EF926D0030D852 /* Reachability.swift */; };
+		AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
 		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		AFD92DD820EF926D0030D852 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +229,8 @@
 		AFD92DD020EF8C8E0030D852 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+				AFD92DD620EF92360030D852 /* APIConstants */,
+				AFD92DD720EF92500030D852 /* Reachability */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -236,6 +241,23 @@
 				AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */,
 			);
 			path = ThemeColor;
+			sourceTree = "<group>";
+		};
+		AFD92DD620EF92360030D852 /* APIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+			);
+			path = APIConstants;
+			sourceTree = "<group>";
+		};
+		AFD92DD720EF92500030D852 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD820EF926D0030D852 /* Reachability.swift */,
+				AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
+				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
@@ -382,6 +405,7 @@
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
+				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
