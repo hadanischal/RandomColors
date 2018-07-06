@@ -16,6 +16,7 @@
 		AFD92D9B20EF409D0030D852 /* RandomColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D9A20EF409D0030D852 /* RandomColorsTests.swift */; };
 		AFD92DA620EF409D0030D852 /* RandomColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DA520EF409D0030D852 /* RandomColorsUITests.swift */; };
 		AFD92DB420EF427B0030D852 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AFD92DB320EF427B0030D852 /* .gitignore */; };
+		AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBC20EF46210030D852 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AFD92DA520EF409D0030D852 /* RandomColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITests.swift; sourceTree = "<group>"; };
 		AFD92DA720EF409E0030D852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD92DB320EF427B0030D852 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AFD92DBC20EF46210030D852 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				AFD92DB820EF453A0030D852 /* Model */,
 				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
+				AFD92DBB20EF46090030D852 /* Extension */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
 				AFD92D9120EF409D0030D852 /* Info.plist */,
 				AFD92D8920EF409C0030D852 /* RandomColors.xcdatamodeld */,
@@ -169,6 +172,14 @@
 				AFD92D8C20EF409D0030D852 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFD92DBB20EF46090030D852 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DBC20EF46210030D852 /* UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
+				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 			);
