@@ -19,6 +19,7 @@
 		AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBC20EF46210030D852 /* UIColor.swift */; };
 		AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBE20EF46700030D852 /* CGFloat.swift */; };
 		AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC020EF4C960030D852 /* ColoursViewController.swift */; };
+		AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AFD92DBC20EF46210030D852 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AFD92DBE20EF46700030D852 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		AFD92DC020EF4C960030D852 /* ColoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewController.swift; sourceTree = "<group>"; };
+		AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				AFD92DB520EF45020030D852 /* AppDelegate */,
 				AFD92DB820EF453A0030D852 /* Model */,
+				AFD92DC220EF4DF30030D852 /* View */,
 				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
 				AFD92DBB20EF46090030D852 /* Extension */,
@@ -186,6 +189,14 @@
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFD92DC220EF4DF30030D852 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
+				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 			);
