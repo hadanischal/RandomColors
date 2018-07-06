@@ -23,6 +23,7 @@
 		AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC820EF5F540030D852 /* UIImageView.swift */; };
 		AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCA20EF67CC0030D852 /* Int.swift */; };
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
+		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		AFD92DC820EF5F540030D852 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		AFD92DCA20EF67CC0030D852 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
+		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				AFD92DC220EF4DF30030D852 /* View */,
 				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
+				AFD92DD020EF8C8E0030D852 /* Service */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
@@ -214,6 +217,14 @@
 				AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		AFD92DD020EF8C8E0030D852 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
+				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,

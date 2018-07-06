@@ -10,7 +10,7 @@ import UIKit
 
 class ColoursViewCell: UICollectionViewCell {
     @IBOutlet var photoImageView: UIImageView?
-
+    
     override var bounds: CGRect {
         didSet {
             self.layoutIfNeeded()
@@ -27,13 +27,10 @@ class ColoursViewCell: UICollectionViewCell {
         super.layoutSubviews()
         switch GeometryClassification.randomGeometry() {
         case .Circle:
-            print("Circle")
             self.setCircularImageView()
         case .Square:
-            print("Square")
             self.setSquareImageView()
         case .Triangle:
-            print("Triangle")
             self.setSquareImageView()
         }
     }
