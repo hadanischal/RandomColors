@@ -32,6 +32,7 @@
 		AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE220EF93470030D852 /* NetworkMethod.swift */; };
 		AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE420EF935D0030D852 /* NetworkService.swift */; };
 		AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE620EF93700030D852 /* NetworkHandler.swift */; };
+		AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE820EF953E0030D852 /* Parceable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		AFD92DE220EF93470030D852 /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
 		AFD92DE420EF935D0030D852 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AFD92DE620EF93700030D852 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		AFD92DE820EF953E0030D852 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				AFD92DD720EF92500030D852 /* Reachability */,
 				AFD92DDC20EF92BF0030D852 /* Result */,
 				AFD92DE120EF93270030D852 /* Network */,
+				AFD92DEA20EF95440030D852 /* Parceable */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -289,6 +292,14 @@
 				AFD92DE620EF93700030D852 /* NetworkHandler.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		AFD92DEA20EF95440030D852 /* Parceable */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DE820EF953E0030D852 /* Parceable.swift */,
+			);
+			path = Parceable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +451,7 @@
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
+				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
 				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
 				AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */,
 			);
