@@ -52,4 +52,9 @@ extension UIColor {
     }
 }
 
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(red: .random, green: .random, blue: .random, alpha: 1.0)
+    }
+}
 

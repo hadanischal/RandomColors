@@ -17,6 +17,7 @@
 		AFD92DA620EF409D0030D852 /* RandomColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DA520EF409D0030D852 /* RandomColorsUITests.swift */; };
 		AFD92DB420EF427B0030D852 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AFD92DB320EF427B0030D852 /* .gitignore */; };
 		AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBC20EF46210030D852 /* UIColor.swift */; };
+		AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBE20EF46700030D852 /* CGFloat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AFD92DA720EF409E0030D852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD92DB320EF427B0030D852 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AFD92DBC20EF46210030D852 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AFD92DBE20EF46700030D852 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		AFD92DBB20EF46090030D852 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DBE20EF46700030D852 /* CGFloat.swift */,
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 			);
 			path = Extension;
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
