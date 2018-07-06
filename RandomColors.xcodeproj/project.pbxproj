@@ -33,6 +33,7 @@
 		AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE420EF935D0030D852 /* NetworkService.swift */; };
 		AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE620EF93700030D852 /* NetworkHandler.swift */; };
 		AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE820EF953E0030D852 /* Parceable.swift */; };
+		AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DEC20EF95A40030D852 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		AFD92DE420EF935D0030D852 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AFD92DE620EF93700030D852 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		AFD92DE820EF953E0030D852 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
+		AFD92DEC20EF95A40030D852 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		AFD92DD020EF8C8E0030D852 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DEB20EF95940030D852 /* ImageManager */,
 				AFD92DD620EF92360030D852 /* APIConstants */,
 				AFD92DD720EF92500030D852 /* Reachability */,
 				AFD92DDC20EF92BF0030D852 /* Result */,
@@ -300,6 +303,14 @@
 				AFD92DE820EF953E0030D852 /* Parceable.swift */,
 			);
 			path = Parceable;
+			sourceTree = "<group>";
+		};
+		AFD92DEB20EF95940030D852 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DEC20EF95A40030D852 /* ImageManager.swift */,
+			);
+			path = ImageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +454,7 @@
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
+				AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */,
 				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
