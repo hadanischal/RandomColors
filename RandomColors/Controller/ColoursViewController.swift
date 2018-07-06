@@ -65,7 +65,7 @@ extension ColoursViewController : UICollectionViewDelegateFlowLayout {
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
-        let heightPerItem = widthPerItem + 21
+        let heightPerItem = widthPerItem
         return CGSize(width: widthPerItem, height: heightPerItem)
     }
     
