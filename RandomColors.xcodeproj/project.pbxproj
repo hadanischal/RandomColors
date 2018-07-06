@@ -34,6 +34,9 @@
 		AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE620EF93700030D852 /* NetworkHandler.swift */; };
 		AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE820EF953E0030D852 /* Parceable.swift */; };
 		AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DEC20EF95A40030D852 /* ImageManager.swift */; };
+		AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */; };
+		AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */; };
+		AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF320EF98130030D852 /* DynamicValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		AFD92DE620EF93700030D852 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		AFD92DE820EF953E0030D852 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
 		AFD92DEC20EF95A40030D852 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModel.swift; sourceTree = "<group>"; };
+		AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewDataSource.swift; sourceTree = "<group>"; };
+		AFD92DF320EF98130030D852 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +323,9 @@
 		AFD92DEE20EF972C0030D852 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */,
+				AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */,
+				AFD92DF320EF98130030D852 /* DynamicValue.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -453,12 +462,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */,
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
 				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
+				AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */,
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
@@ -469,6 +480,7 @@
 				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
+				AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
