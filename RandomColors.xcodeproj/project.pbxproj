@@ -25,6 +25,15 @@
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
 		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
 		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
+		AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD820EF926D0030D852 /* Reachability.swift */; };
+		AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */; };
+		AFD92DDE20EF92E30030D852 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDD20EF92E30030D852 /* Result.swift */; };
+		AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDF20EF92F30030D852 /* ErrorResult.swift */; };
+		AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE220EF93470030D852 /* NetworkMethod.swift */; };
+		AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE420EF935D0030D852 /* NetworkService.swift */; };
+		AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE620EF93700030D852 /* NetworkHandler.swift */; };
+		AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DE820EF953E0030D852 /* Parceable.swift */; };
+		AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DEC20EF95A40030D852 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +78,15 @@
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
 		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		AFD92DD820EF926D0030D852 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityError.swift; sourceTree = "<group>"; };
+		AFD92DDD20EF92E30030D852 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AFD92DDF20EF92F30030D852 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		AFD92DE220EF93470030D852 /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		AFD92DE420EF935D0030D852 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AFD92DE620EF93700030D852 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		AFD92DE820EF953E0030D852 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
+		AFD92DEC20EF95A40030D852 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +243,12 @@
 		AFD92DD020EF8C8E0030D852 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+				AFD92DEB20EF95940030D852 /* ImageManager */,
+				AFD92DD620EF92360030D852 /* APIConstants */,
+				AFD92DD720EF92500030D852 /* Reachability */,
+				AFD92DDC20EF92BF0030D852 /* Result */,
+				AFD92DE120EF93270030D852 /* Network */,
+				AFD92DEA20EF95440030D852 /* Parceable */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -236,6 +259,58 @@
 				AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */,
 			);
 			path = ThemeColor;
+			sourceTree = "<group>";
+		};
+		AFD92DD620EF92360030D852 /* APIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+			);
+			path = APIConstants;
+			sourceTree = "<group>";
+		};
+		AFD92DD720EF92500030D852 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD820EF926D0030D852 /* Reachability.swift */,
+				AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		AFD92DDC20EF92BF0030D852 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DDD20EF92E30030D852 /* Result.swift */,
+				AFD92DDF20EF92F30030D852 /* ErrorResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		AFD92DE120EF93270030D852 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DE220EF93470030D852 /* NetworkMethod.swift */,
+				AFD92DE420EF935D0030D852 /* NetworkService.swift */,
+				AFD92DE620EF93700030D852 /* NetworkHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AFD92DEA20EF95440030D852 /* Parceable */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DE820EF953E0030D852 /* Parceable.swift */,
+			);
+			path = Parceable;
+			sourceTree = "<group>";
+		};
+		AFD92DEB20EF95940030D852 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DEC20EF95A40030D852 /* ImageManager.swift */,
+			);
+			path = ImageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,17 +446,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
+				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
+				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
+				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
+				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
+				AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */,
 				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
 				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
+				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
+				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
+				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
+				AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
