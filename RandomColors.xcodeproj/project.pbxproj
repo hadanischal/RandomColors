@@ -138,13 +138,14 @@
 		AFD92D8120EF409C0030D852 /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DB520EF45020030D852 /* AppDelegate */,
 				AFD92DB820EF453A0030D852 /* Model */,
 				AFD92DC220EF4DF30030D852 /* View */,
 				AFD92DB620EF45130030D852 /* Controller */,
+				AFD92DEE20EF972C0030D852 /* ViewModels */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
 				AFD92DD020EF8C8E0030D852 /* Service */,
+				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
@@ -243,11 +244,11 @@
 		AFD92DD020EF8C8E0030D852 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DEB20EF95940030D852 /* ImageManager */,
 				AFD92DD620EF92360030D852 /* APIConstants */,
 				AFD92DD720EF92500030D852 /* Reachability */,
 				AFD92DDC20EF92BF0030D852 /* Result */,
 				AFD92DE120EF93270030D852 /* Network */,
+				AFD92DEB20EF95940030D852 /* ImageManager */,
 				AFD92DEA20EF95440030D852 /* Parceable */,
 			);
 			path = Service;
@@ -311,6 +312,13 @@
 				AFD92DEC20EF95A40030D852 /* ImageManager.swift */,
 			);
 			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		AFD92DEE20EF972C0030D852 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
