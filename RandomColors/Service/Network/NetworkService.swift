@@ -11,7 +11,7 @@ import Foundation
 final class NetworkService {
     
     func loadData(urlString: String, session: URLSession = URLSession(configuration: .default), completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask? {
-        
+        print("urlString:",urlString)
         guard let url = URL(string: urlString) else {
             completion(.failure(.network(string: "Wrong url format")))
             return nil
@@ -26,6 +26,7 @@ final class NetworkService {
                 return
             }
             if let data = data {
+                print(data)
                 completion(.success(data))
             }
         }

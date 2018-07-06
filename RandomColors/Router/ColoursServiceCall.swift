@@ -14,13 +14,12 @@ protocol ColoursServiceCallProtocol: class {
 
 final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
     static let shared = ColoursServiceCall()
-    let endpoint = APIConstants.baseURLString
+    let endpoint = APIConstants.patternsURL
     var task : URLSessionTask?
     
     func fetchConverter(_ completion: @escaping ((Result<ColoursModel, ErrorResult>) -> Void)) {
         self.cancelFetchService()
         task = NetworkService().loadData(urlString: endpoint, completion: self.networkResult(completion: completion))
-        
     }
     
     func cancelFetchService() {
