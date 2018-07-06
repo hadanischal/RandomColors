@@ -11,10 +11,37 @@ import UIKit
 class ColoursViewCell: UICollectionViewCell {
     @IBOutlet var photoImageView: UIImageView?
 
+    override var bounds: CGRect {
+        didSet {
+            self.layoutIfNeeded()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-//        self.contentView.backgroundColor = UIColor.random
         self.photoImageView?.backgroundColor = UIColor.random
-
+        self.photoImageView?.layer.masksToBounds = true
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        switch GeometryClassification.randomGeometry() {
+        case .Circle:
+            print("Circle")
+            self.setCircularImageView()
+        case .Square:
+            print("Square")
+            self.setSquareImageView()
+        case .Triangle:
+            print("Triangle")
+            self.setSquareImageView()
+        }
+    }
+    
+    func setCircularImageView() {
+        self.photoImageView?.layer.cornerRadius = CGFloat(roundf(Float((self.photoImageView?.frame.size.width)! / 2.0)))
+    }
+    func setSquareImageView() {
+        self.photoImageView?.layer.cornerRadius = 0.00
     }
 }
