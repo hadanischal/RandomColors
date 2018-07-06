@@ -9,5 +9,8 @@
 import UIKit
 
 class ColoursViewCell: UICollectionViewCell {
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.contentView.backgroundColor = UIColor.random
+    }
 }

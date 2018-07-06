@@ -38,13 +38,13 @@ extension ColoursViewController: UICollectionViewDataSource {
         self.collectionView?.backgroundColor = UIColor.white
         self.collectionView?.showsHorizontalScrollIndicator = false
     }
- 
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 1000 //Int.max
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -55,7 +55,7 @@ extension ColoursViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelect Item")
     }
-
+    
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
