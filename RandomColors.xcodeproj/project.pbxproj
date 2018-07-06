@@ -18,6 +18,13 @@
 		AFD92DB420EF427B0030D852 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AFD92DB320EF427B0030D852 /* .gitignore */; };
 		AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBC20EF46210030D852 /* UIColor.swift */; };
 		AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DBE20EF46700030D852 /* CGFloat.swift */; };
+		AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC020EF4C960030D852 /* ColoursViewController.swift */; };
+		AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */; };
+		AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC820EF5F540030D852 /* UIImageView.swift */; };
+		AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCA20EF67CC0030D852 /* Int.swift */; };
+		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
+		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
+		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		AFD92DB320EF427B0030D852 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AFD92DBC20EF46210030D852 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AFD92DBE20EF46700030D852 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		AFD92DC020EF4C960030D852 /* ColoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewController.swift; sourceTree = "<group>"; };
+		AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewCell.swift; sourceTree = "<group>"; };
+		AFD92DC820EF5F540030D852 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		AFD92DCA20EF67CC0030D852 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
+		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +120,14 @@
 		AFD92D8120EF409C0030D852 /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DB520EF45020030D852 /* AppDelegate */,
 				AFD92DB820EF453A0030D852 /* Model */,
+				AFD92DC220EF4DF30030D852 /* View */,
 				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
+				AFD92DD020EF8C8E0030D852 /* Service */,
+				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
 				AFD92D9120EF409D0030D852 /* Info.plist */,
@@ -147,6 +165,7 @@
 		AFD92DB620EF45130030D852 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DC020EF4C960030D852 /* ColoursViewController.swift */,
 				AFD92D8420EF409C0030D852 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -155,8 +174,8 @@
 		AFD92DB720EF452A0030D852 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92D8E20EF409D0030D852 /* LaunchScreen.storyboard */,
 				AFD92D8620EF409C0030D852 /* Main.storyboard */,
+				AFD92D8E20EF409D0030D852 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -181,8 +200,42 @@
 			children = (
 				AFD92DBE20EF46700030D852 /* CGFloat.swift */,
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
+				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
+				AFD92DCA20EF67CC0030D852 /* Int.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFD92DC220EF4DF30030D852 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFD92DCD20EF896D0030D852 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AFD92DD020EF8C8E0030D852 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AFD92DD320EF8CEB0030D852 /* ThemeColor */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */,
+			);
+			path = ThemeColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +371,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
+				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
+				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
+				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
+				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
+				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
+				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
+				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
