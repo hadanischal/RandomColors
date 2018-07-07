@@ -10,6 +10,10 @@ import UIKit
 
 class ColoursViewCell: UICollectionViewCell {
     @IBOutlet var photoImageView: UIImageView?
+    var coloursValue : ColoursModel? {
+        didSet {
+        }
+    }
     
     override var bounds: CGRect {
         didSet {
@@ -20,9 +24,14 @@ class ColoursViewCell: UICollectionViewCell {
     override var isSelected: Bool{
         didSet{
             if self.isSelected{
-                self.photoImageView?.backgroundColor = UIColor.random
+                if let data = coloursValue,
+                    let hex = data.hex{
+                    self.photoImageView?.backgroundColor = UIColor(hex:"#" + hex.lowercased())
+                }else{
+                    self.photoImageView?.backgroundColor = UIColor.random
+                }
             }else{
-                self.photoImageView?.backgroundColor = UIColor.lightGray //UIColor.random
+                self.photoImageView?.backgroundColor = UIColor.lightGray
             }
         }
     }
