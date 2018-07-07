@@ -9,15 +9,17 @@
 import Foundation
 
 protocol ColoursServiceCallProtocol: class {
-    func fetchConverter(_ completion: @escaping ((Result<ColoursModel, ErrorResult>) -> Void))
+    func fetchConverter(_ completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void))
 }
 
 final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
     static let shared = ColoursServiceCall()
-    let endpoint = APIConstants.patternsURL
+//    let endpoint = APIConstants.patternsURL
+    let endpoint = APIConstants.colorsURL
+
     var task : URLSessionTask?
     
-    func fetchConverter(_ completion: @escaping ((Result<ColoursModel, ErrorResult>) -> Void)) {
+    func fetchConverter(_ completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void)) {
         self.cancelFetchService()
         task = NetworkService().loadData(urlString: endpoint, completion: self.networkResult(completion: completion))
     }

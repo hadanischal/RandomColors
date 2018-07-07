@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */; };
+		AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */; };
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
-		AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8420EF409C0030D852 /* ViewController.swift */; };
 		AFD92D8820EF409C0030D852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8620EF409C0030D852 /* Main.storyboard */; };
 		AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8920EF409C0030D852 /* RandomColors.xcdatamodeld */; };
 		AFD92D8D20EF409D0030D852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8C20EF409D0030D852 /* Assets.xcassets */; };
@@ -59,9 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD92D8220EF409C0030D852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFD92D8420EF409C0030D852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFD92D8720EF409C0030D852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD92D8A20EF409C0030D852 /* RandomColors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomColors.xcdatamodel; sourceTree = "<group>"; };
 		AFD92D8C20EF409D0030D852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DC020EF4C960030D852 /* ColoursViewController.swift */,
-				AFD92D8420EF409C0030D852 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +234,7 @@
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
 				AFD92DCA20EF67CC0030D852 /* Int.swift */,
+				AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */,
+				AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -483,7 +486,6 @@
 				AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
-				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */,
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
@@ -493,10 +495,12 @@
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
 				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
+				AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
 				AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
+				AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */,
 				AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,

@@ -12,13 +12,17 @@ class ColoursViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView?
     fileprivate let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
     fileprivate let itemsPerRow: CGFloat = 3
-    weak var service: ColoursServiceCallProtocol?
-    
+    var activityIndicator : ActivityIndicator? = ActivityIndicator()
+    let dataSource = ColoursViewDataSource()
+    lazy var viewModel : ColoursViewModel = {
+        let viewModel = ColoursViewModel(dataSource: dataSource)
+        return viewModel
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.setupViewModel()
         self.setupCollectionView()
-        self.fetchServiceCall()
     }
     
     func setupUI() {
@@ -26,30 +30,33 @@ class ColoursViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
     }
     
-    func fetchServiceCall(_ completion: ((Result<Bool, ErrorResult>) -> Void)? = nil) {
-        self.service = ColoursServiceCall.shared
-        guard let service = service else {
-            // onErrorHandling?(ErrorResult.custom(string: "Missing service"))
-            return
+    func setupViewModel() {
+        self.collectionView?.dataSource = self.dataSource
+        self.dataSource.data.addAndNotify(observer: self) { [weak self] _ in
+            self?.collectionView?.reloadData()
         }
-        service.fetchConverter { result in
+        self.viewModel.onErrorHandling = { [weak self] error in
+            self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
+        }
+        self.methodViewModelService()
+    }
+    
+    func methodViewModelService() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        self.activityIndicator?.start()
+        self.viewModel.fetchServiceCall(){ result in
             DispatchQueue.main.async {
-                switch result {
-                case .success(let converter) :
-                    print(converter)
-                    completion?(Result.success(true))
-                case .failure(let error) :
-                    print(error)
-                    completion?(Result.failure(error))
-                }
+                self.activityIndicator?.stop()
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self.collectionView?.reloadData()
             }
         }
     }
-    
 }
 
 // MARK: UICollectionViewDataSource
-extension ColoursViewController: UICollectionViewDataSource {
+extension ColoursViewController{
+    //: UICollectionViewDataSource {
     func setupCollectionView() -> Void{
         guard let layout = self.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
@@ -61,7 +68,7 @@ extension ColoursViewController: UICollectionViewDataSource {
         self.collectionView?.backgroundColor = UIColor.white
         self.collectionView?.showsHorizontalScrollIndicator = false
     }
-    
+    /*
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -74,7 +81,7 @@ extension ColoursViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
         return cell
     }
-    
+    */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelect Item")
     }
