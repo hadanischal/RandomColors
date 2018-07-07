@@ -12,6 +12,7 @@ class ColoursViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView?
     fileprivate let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
     fileprivate let itemsPerRow: CGFloat = 3
+    var activityIndicator : ActivityIndicator? = ActivityIndicator()
     let dataSource = ColoursViewDataSource()
     lazy var viewModel : ColoursViewModel = {
         let viewModel = ColoursViewModel(dataSource: dataSource)
@@ -34,9 +35,9 @@ class ColoursViewController: UIViewController {
         self.dataSource.data.addAndNotify(observer: self) { [weak self] _ in
             self?.collectionView?.reloadData()
         }
-//        self.viewModel.onErrorHandling = { [weak self] error in
-//            self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
-//        }
+        self.viewModel.onErrorHandling = { [weak self] error in
+            self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
+        }
     }
 }
 
