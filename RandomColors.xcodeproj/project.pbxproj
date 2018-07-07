@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
-		AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8420EF409C0030D852 /* ViewController.swift */; };
 		AFD92D8820EF409C0030D852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8620EF409C0030D852 /* Main.storyboard */; };
 		AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8920EF409C0030D852 /* RandomColors.xcdatamodeld */; };
 		AFD92D8D20EF409D0030D852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8C20EF409D0030D852 /* Assets.xcassets */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD92D8220EF409C0030D852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFD92D8420EF409C0030D852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFD92D8720EF409C0030D852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD92D8A20EF409C0030D852 /* RandomColors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomColors.xcdatamodel; sourceTree = "<group>"; };
 		AFD92D8C20EF409D0030D852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DC020EF4C960030D852 /* ColoursViewController.swift */,
-				AFD92D8420EF409C0030D852 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -483,7 +480,6 @@
 				AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
-				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */,
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
