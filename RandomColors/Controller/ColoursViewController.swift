@@ -39,6 +39,18 @@ class ColoursViewController: UIViewController {
             self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
         }
     }
+    
+    func methodViewModelService() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        self.activityIndicator?.start()
+        self.viewModel.fetchServiceCall(){ result in
+            DispatchQueue.main.async {
+                self.activityIndicator?.stop()
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self.collectionView?.reloadData()
+            }
+        }
+    }
 }
 
 // MARK: UICollectionViewDataSource
