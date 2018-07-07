@@ -37,6 +37,7 @@ class ColoursViewController: UIViewController {
                 switch result {
                 case .success(let converter) :
                     print(converter)
+                    self.collectionView?.reloadData()
                     completion?(Result.success(true))
                 case .failure(let error) :
                     print(error)

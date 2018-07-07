@@ -26,7 +26,6 @@ final class NetworkService {
                 return
             }
             if let data = data {
-                print(data)
                 completion(.success(data))
             }
         }
