@@ -31,13 +31,14 @@ class ColoursViewController: UIViewController {
     }
     
     func setupViewModel() {
-       // self.collectionView?.dataSource = self.dataSource
+        self.collectionView?.dataSource = self.dataSource
         self.dataSource.data.addAndNotify(observer: self) { [weak self] _ in
             self?.collectionView?.reloadData()
         }
         self.viewModel.onErrorHandling = { [weak self] error in
             self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
         }
+        self.methodViewModelService()
     }
     
     func methodViewModelService() {
@@ -54,7 +55,8 @@ class ColoursViewController: UIViewController {
 }
 
 // MARK: UICollectionViewDataSource
-extension ColoursViewController: UICollectionViewDataSource {
+extension ColoursViewController{
+    //: UICollectionViewDataSource {
     func setupCollectionView() -> Void{
         guard let layout = self.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
@@ -66,7 +68,7 @@ extension ColoursViewController: UICollectionViewDataSource {
         self.collectionView?.backgroundColor = UIColor.white
         self.collectionView?.showsHorizontalScrollIndicator = false
     }
-    
+    /*
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -79,7 +81,7 @@ extension ColoursViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
         return cell
     }
-    
+    */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelect Item")
     }
