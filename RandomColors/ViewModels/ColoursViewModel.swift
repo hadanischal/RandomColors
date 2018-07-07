@@ -15,7 +15,7 @@ class ColoursViewModel {
     // MARK: - Output
     weak var service: ColoursServiceCallProtocol?
     var onErrorHandling : ((ErrorResult?) -> Void)?
- 
+    
     init(service: ColoursServiceCallProtocol? = ColoursServiceCall.shared, dataSource : GenericDataSource<ColoursModel>?) {
         self.dataSource = dataSource
         self.service = service
@@ -27,7 +27,16 @@ class ColoursViewModel {
             onErrorHandling?(ErrorResult.custom(string: "Missing service"))
             return
         }
-        service.fetchConverter() { result in
+        var endpoint = APIConstants.baseURLString
+        
+        switch GeometryClassification.randomGeometry() {
+        case .Circle:
+            endpoint = APIConstants.colorsURL
+        case .Square:
+            endpoint = APIConstants.patternsURL
+        }
+        
+        service.fetchConverter(endpoint) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let converter) :
@@ -43,5 +52,5 @@ class ColoursViewModel {
             }
         }
     }
- 
+    
 }

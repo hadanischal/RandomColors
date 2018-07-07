@@ -11,7 +11,7 @@ import UIKit
 class ColoursViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView?
     fileprivate let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
-    fileprivate let itemsPerRow: CGFloat = 3
+    fileprivate let itemsPerRow: CGFloat = 6
     var activityIndicator : ActivityIndicator? = ActivityIndicator()
     let dataSource = ColoursViewDataSource()
     lazy var viewModel : ColoursViewModel = {
@@ -33,22 +33,22 @@ class ColoursViewController: UIViewController {
     func setupViewModel() {
         self.collectionView?.dataSource = self.dataSource
         self.dataSource.data.addAndNotify(observer: self) { [weak self] _ in
-            self?.collectionView?.reloadData()
+            // self?.collectionView?.reloadData()
+            print("notified")
         }
         self.viewModel.onErrorHandling = { [weak self] error in
             self?.showAlert(title: "An error occured", message: "Oops, something went wrong!")
         }
-        self.methodViewModelService()
     }
     
-    func methodViewModelService() {
+    func methodViewModelService(_ indexPath: IndexPath) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         self.activityIndicator?.start()
         self.viewModel.fetchServiceCall(){ result in
             DispatchQueue.main.async {
+                self.collectionView?.reloadItems(at: [indexPath])
                 self.activityIndicator?.stop()
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                self.collectionView?.reloadData()
             }
         }
     }
@@ -69,21 +69,22 @@ extension ColoursViewController{
         self.collectionView?.showsHorizontalScrollIndicator = false
     }
     /*
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1000 //Int.max
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
-        return cell
-    }
-    */
+     func numberOfSections(in collectionView: UICollectionView) -> Int {
+     return 1
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+     return 1000 //Int.max
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
+     return cell
+     }
+     */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelect Item")
+        self.methodViewModelService(indexPath)
     }
     
 }
