@@ -7,19 +7,21 @@
 //
 
 import XCTest
+@testable import RandomColors
 
 class ColoursViewDataSourceTests: XCTestCase {
+    var dataSource : ColoursViewDataSource?
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        dataSource = ColoursViewDataSource()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        dataSource = nil
         super.tearDown()
     }
-    
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -33,3 +35,19 @@ class ColoursViewDataSourceTests: XCTestCase {
     }
     
 }
+
+
+extension FileManager {
+    static func readJsonFile(forResource fileName: String ) -> Data? {
+        let bundle = Bundle(for: ColoursViewDataSourceTests.self)
+        if let path = bundle.path(forResource: fileName, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                return data
+            } catch {
+            }
+        }
+        return nil
+    }
+}
+
