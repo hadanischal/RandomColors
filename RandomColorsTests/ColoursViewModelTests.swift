@@ -7,29 +7,61 @@
 //
 
 import XCTest
+@testable import RandomColors
 
 class ColoursViewModelTests: XCTestCase {
+    fileprivate class MockPhotosServiceCall: ColoursServiceCallProtocol {
+        var fetchedData: [ColoursModel]?
+        func fetchConverter(_ urlString: String, completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void)) {
+            if let data = fetchedData {
+                completion(Result.success(data))
+            } else {
+                completion(Result.failure(ErrorResult.custom(string: "No converter")))
+            }
+        }
+      }
+    
+    var viewModel : ColoursViewModel?
+    var dataSource : GenericDataSource<ColoursModel>?
+    fileprivate var service : MockPhotosServiceCall?
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.service = MockPhotosServiceCall()
+        self.dataSource = GenericDataSource<ColoursModel>()
+        self.viewModel = ColoursViewModel(service: service, dataSource: dataSource)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.viewModel = nil
+        self.dataSource = nil
+        self.service = nil
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testfetchData() {
+        let dictionary:[String: Any] = [:]
+        guard let result = ColoursModel.init(json: dictionary)else{
+          return XCTAssert(false, "ViewModel should not be able to fetch without ColoursModel")
+        }
+        service?.fetchedData = [result]
+        viewModel?.fetchServiceCall() { (result) in
+            switch result {
+            case .failure(_) :
+                XCTAssert(false, "ViewModel should not be able to fetch without service")
+            default: break
+            }
         }
     }
-    
+
+    func testfetchNoDatas() {
+        service?.fetchedData = nil
+        viewModel?.fetchServiceCall() { (result) in
+            switch result {
+            case .success(_) :
+                XCTAssert(false, "ViewModel should not be able to fetch")
+            default: break
+            }
+        }
+    }
 }
