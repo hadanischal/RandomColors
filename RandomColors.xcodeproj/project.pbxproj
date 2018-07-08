@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */; };
 		AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */; };
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 		AFD92D9920EF409D0030D852 /* RandomColorsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */,
 				AFD92D9A20EF409D0030D852 /* RandomColorsTests.swift */,
 				AFD92D9C20EF409D0030D852 /* Info.plist */,
 			);
@@ -513,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */,
 				AFD92D9B20EF409D0030D852 /* RandomColorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
