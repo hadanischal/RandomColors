@@ -1,0 +1,33 @@
+ [
+  {
+  "id": 1871382,
+  "title": "As You Well Know",
+  "userName": "UPtimist",
+  "numViews": 41,
+  "numVotes": 1,
+  "numComments": 0,
+  "numHearts": 0,
+  "rank": 0,
+  "dateCreated": "2011-10-13 06:45:30",
+  "colors": [
+             "C1B59F",
+             "B8B106",
+             "181168",
+             "9F1111",
+             "000000"
+             ],
+  "description": "<a href=\"http://www.colourlovers.com/palette/2285499/Nestled\" target=\"_blank\"><img src=\"http://www.colourlovers.com/images/badges/pw/2285/2285499_Nestled.png\" style=\"width: 240px; height: 120px; border: 0 none;\" alt=\"Nestled\" /></a>\r\n<div style=\"width: 300px; text-align: center;\"><a href=\"http://www.colourlovers.com/contests/moo/minicard/2285499\" target=\"_blank\" style=\"display: block; margin-bottom: 5px; width: 300px; height: 120px; -moz-box-shadow: 0 1px 4px #d1d1d1; -webkit-box-shadow: 0 1px 4px #d1d1d1; box-shadow: 0 1px 4px #d1d1d1; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=180, Color=",
+  "url": "http://www.colourlovers.com/pattern/1871382/As_You_Well_Know",
+  "imageUrl": "http://colourlovers.com.s3.amazonaws.com/images/patterns/1871/1871382.png",
+  "badgeUrl": "http://www.colourlovers.com/images/badges/n/1871/1871382_As_You_Well_Know.png",
+  "apiUrl": "http://www.colourlovers.com/api/pattern/1871382",
+  "template": {
+  "title": "Something More",
+  "url": "http://www.colourlovers.com/pattern/template/2835/Something_More",
+  "author": {
+  "userName": "UPtimist",
+  "url": "http://www.colourlovers.com/lover/UPtimist"
+  }
+  }
+  }
+  ]
