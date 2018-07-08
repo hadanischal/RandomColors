@@ -19,7 +19,7 @@ class ColoursViewModelTests: XCTestCase {
                 completion(Result.failure(ErrorResult.custom(string: "No converter")))
             }
         }
-      }
+    }
     
     var viewModel : ColoursViewModel?
     var dataSource : GenericDataSource<ColoursModel>?
@@ -42,7 +42,8 @@ class ColoursViewModelTests: XCTestCase {
     func testfetchData() {
         let dictionary:[String: Any] = [:]
         guard let result = ColoursModel.init(json: dictionary)else{
-          return XCTAssert(false, "ViewModel should not be able to fetch without ColoursModel")
+            XCTAssert(false, "ViewModel should not be able to fetch without ColoursModel")
+            return
         }
         service?.fetchedData = [result]
         viewModel?.fetchServiceCall() { (result) in
@@ -53,7 +54,7 @@ class ColoursViewModelTests: XCTestCase {
             }
         }
     }
-
+    
     func testfetchNoDatas() {
         service?.fetchedData = nil
         viewModel?.fetchServiceCall() { (result) in
