@@ -18,6 +18,7 @@ class ColoursViewDataSource: GenericDataSource<ColoursModel>, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //return data.value.count
         return 50
     }
     

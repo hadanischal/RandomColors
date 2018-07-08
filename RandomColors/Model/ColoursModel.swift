@@ -58,7 +58,7 @@ struct ColoursModel {
         badgeUrl = json["badgeUrl"] as? String ?? ""
         apiUrl = json["apiUrl"] as? String ?? ""
         
-        //parrerns
+        //patterns
         colors = json["colors"] as? [Any] ?? []
         template = json["template"] as? [String: Any] ?? [:]
 
