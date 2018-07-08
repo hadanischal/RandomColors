@@ -32,7 +32,7 @@ class ColoursViewController: UIViewController {
     
     func setupViewModel() {
         self.collectionView?.dataSource = self.dataSource
-        self.dataSource.data.addAndNotify(observer: self) { [weak self] _ in
+        self.dataSource.data.addAndNotify(observer: self) { _ in
             // self?.collectionView?.reloadData()
             print("notified")
         }
@@ -42,6 +42,7 @@ class ColoursViewController: UIViewController {
     }
     
     func methodViewModelService(_ indexPath: IndexPath) {
+        //self.collectionView?.reloadData()
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         self.activityIndicator?.start()
         self.viewModel.fetchServiceCall(){ result in
@@ -56,7 +57,6 @@ class ColoursViewController: UIViewController {
 
 // MARK: UICollectionViewDataSource
 extension ColoursViewController{
-    //: UICollectionViewDataSource {
     func setupCollectionView() -> Void{
         guard let layout = self.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
@@ -68,20 +68,7 @@ extension ColoursViewController{
         self.collectionView?.backgroundColor = UIColor.white
         self.collectionView?.showsHorizontalScrollIndicator = false
     }
-    /*
-     func numberOfSections(in collectionView: UICollectionView) -> Int {
-     return 1
-     }
-     
-     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-     return 1000 //Int.max
-     }
-     
-     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
-     return cell
-     }
-     */
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelect Item")
         self.methodViewModelService(indexPath)

@@ -38,7 +38,6 @@ class ColoursViewCell: UICollectionViewCell {
         }
     }
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.photoImageView?.backgroundColor = UIColor.white //UIColor.random
