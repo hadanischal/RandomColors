@@ -28,6 +28,10 @@ struct ColoursModel {
     let imageUrl: String?
     let badgeUrl: String?
     let apiUrl: String?
+    //patterns
+    let colors: [Any]?
+    let template: [String:Any]?
+    
     
     init?(json: [String: Any]?) {
         guard let json = json else {return nil}
@@ -43,6 +47,7 @@ struct ColoursModel {
 
         dateCreated = json["dateCreated"] as? String ?? ""
        
+        //colours
         hex = json["hex"] as? String ?? ""
         rgb = json["rgb"] as? [String: Any] ?? [:]
         hsv = json["hsv"] as? [String: Any] ?? [:]
@@ -52,6 +57,11 @@ struct ColoursModel {
         imageUrl = json["imageUrl"] as? String ?? ""
         badgeUrl = json["badgeUrl"] as? String ?? ""
         apiUrl = json["apiUrl"] as? String ?? ""
+        
+        //parrerns
+        colors = json["colors"] as? [Any] ?? []
+        template = json["template"] as? [String: Any] ?? [:]
+
     }
     
 }
