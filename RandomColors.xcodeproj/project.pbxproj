@@ -10,6 +10,7 @@
 		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF22AB3020F19BEC0009D6E5 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB2F20F19BEC0009D6E5 /* colors.json */; };
 		AF22AB3220F19C1B0009D6E5 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB3120F19C1B0009D6E5 /* patterns.json */; };
+		AF22AB3420F19E670009D6E5 /* ColoursViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */; };
 		AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */; };
 		AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */; };
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
@@ -25,7 +26,6 @@
 		AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC020EF4C960030D852 /* ColoursViewController.swift */; };
 		AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */; };
 		AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC820EF5F540030D852 /* UIImageView.swift */; };
-		AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCA20EF67CC0030D852 /* Int.swift */; };
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
 		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
 		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
@@ -66,6 +66,7 @@
 		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF22AB2F20F19BEC0009D6E5 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		AF22AB3120F19C1B0009D6E5 /* patterns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
+		AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewDataSourceTests.swift; sourceTree = "<group>"; };
 		AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +88,6 @@
 		AFD92DC020EF4C960030D852 /* ColoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewController.swift; sourceTree = "<group>"; };
 		AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewCell.swift; sourceTree = "<group>"; };
 		AFD92DC820EF5F540030D852 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		AFD92DCA20EF67CC0030D852 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
 		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
@@ -177,6 +177,7 @@
 		AFD92D9920EF409D0030D852 /* RandomColorsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */,
 				AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */,
 				AFD92D9A20EF409D0030D852 /* RandomColorsTests.swift */,
 				AFD92D9C20EF409D0030D852 /* Info.plist */,
@@ -242,7 +243,6 @@
 				AFD92DBE20EF46700030D852 /* CGFloat.swift */,
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
-				AFD92DCA20EF67CC0030D852 /* Int.swift */,
 				AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */,
 			);
 			path = Extension;
@@ -505,7 +505,6 @@
 				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
-				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
 				AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
@@ -525,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */,
+				AF22AB3420F19E670009D6E5 /* ColoursViewDataSourceTests.swift in Sources */,
 				AFD92D9B20EF409D0030D852 /* RandomColorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
