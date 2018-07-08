@@ -28,7 +28,7 @@ class ColoursViewDataSourceTests: XCTestCase {
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: layout)
         collectionView.dataSource = dataSource
         XCTAssertEqual(dataSource?.numberOfSections(in: collectionView), 1, "Expected one section in collection view")
-        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 50), 50, "Expected 50 cell in collection view")
+        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 50), 60, "Expected 60 cell in collection view")
 //        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 0, "Expected no cell in collection view")
     }
     
@@ -40,7 +40,7 @@ class ColoursViewDataSourceTests: XCTestCase {
         collectionView.dataSource = dataSource
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         XCTAssertEqual(dataSource?.numberOfSections(in: collectionView), 1, "Expected one section in table view")
-        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 50, "Expected 50 cell in collection view")
+        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 60, "Expected 60 cell in collection view")
 //        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), responseResults.count, "Expected responseResults.count cell in collection view")
     }
     
