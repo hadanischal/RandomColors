@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
-		AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8420EF409C0030D852 /* ViewController.swift */; };
 		AFD92D8820EF409C0030D852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8620EF409C0030D852 /* Main.storyboard */; };
 		AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8920EF409C0030D852 /* RandomColors.xcdatamodeld */; };
 		AFD92D8D20EF409D0030D852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD92D8C20EF409D0030D852 /* Assets.xcassets */; };
@@ -21,9 +20,7 @@
 		AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC020EF4C960030D852 /* ColoursViewController.swift */; };
 		AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */; };
 		AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC820EF5F540030D852 /* UIImageView.swift */; };
-		AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCA20EF67CC0030D852 /* Int.swift */; };
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
-		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
 		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +44,6 @@
 /* Begin PBXFileReference section */
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD92D8220EF409C0030D852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFD92D8420EF409C0030D852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFD92D8720EF409C0030D852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD92D8A20EF409C0030D852 /* RandomColors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomColors.xcdatamodel; sourceTree = "<group>"; };
 		AFD92D8C20EF409D0030D852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,9 +61,7 @@
 		AFD92DC020EF4C960030D852 /* ColoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewController.swift; sourceTree = "<group>"; };
 		AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewCell.swift; sourceTree = "<group>"; };
 		AFD92DC820EF5F540030D852 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		AFD92DCA20EF67CC0030D852 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
-		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,13 +114,11 @@
 		AFD92D8120EF409C0030D852 /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DB520EF45020030D852 /* AppDelegate */,
-				AFD92DB820EF453A0030D852 /* Model */,
 				AFD92DC220EF4DF30030D852 /* View */,
 				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
-				AFD92DD020EF8C8E0030D852 /* Service */,
+				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
@@ -166,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DC020EF4C960030D852 /* ColoursViewController.swift */,
-				AFD92D8420EF409C0030D852 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,13 +169,6 @@
 				AFD92D8E20EF409D0030D852 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		AFD92DB820EF453A0030D852 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AFD92DBA20EF45A50030D852 /* Resources */ = {
@@ -201,7 +185,6 @@
 				AFD92DBE20EF46700030D852 /* CGFloat.swift */,
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
-				AFD92DCA20EF67CC0030D852 /* Int.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -220,14 +203,6 @@
 				AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		AFD92DD020EF8C8E0030D852 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				AFD92DD120EF8CA90030D852 /* APIConstants.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		AFD92DD320EF8CEB0030D852 /* ThemeColor */ = {
@@ -371,14 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
-				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
-				AFD92D8520EF409C0030D852 /* ViewController.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
-				AFD92DCB20EF67CC0030D852 /* Int.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92D8B20EF409C0030D852 /* RandomColors.xcdatamodeld in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
@@ -555,7 +527,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9W8TZ624;
 				INFOPLIST_FILE = RandomColors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,7 +546,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9W8TZ624;
 				INFOPLIST_FILE = RandomColors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
