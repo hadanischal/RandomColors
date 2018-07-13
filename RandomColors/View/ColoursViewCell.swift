@@ -17,6 +17,16 @@ class ColoursViewCell: UICollectionViewCell {
         }
     }
     
+    override var isSelected: Bool{
+        didSet{
+            if self.isSelected{
+                self.photoImageView?.backgroundColor = UIColor.random
+            }else{
+                self.photoImageView?.backgroundColor = UIColor.lightGray
+            }
+        }
+    }
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         self.photoImageView?.backgroundColor = UIColor.random
@@ -42,3 +52,5 @@ class ColoursViewCell: UICollectionViewCell {
         self.photoImageView?.layer.cornerRadius = 0.00
     }
 }
+
+
