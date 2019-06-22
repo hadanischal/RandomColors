@@ -18,11 +18,11 @@ struct ColoursModel {
     let numHearts: Int?
     let rank: Int?
     let dateCreated: String?
-    
+
     let hex: String?
-    let rgb: [String:Any]?
-    let hsv: [String:Any]?
-    
+    let rgb: [String: Any]?
+    let hsv: [String: Any]?
+
     let description: String?
     let url: String?
     let imageUrl: String?
@@ -30,9 +30,8 @@ struct ColoursModel {
     let apiUrl: String?
     //patterns
     let colors: [Any]?
-    let template: [String:Any]?
-    
-    
+    let template: [String: Any]?
+
     init?(json: [String: Any]?) {
         guard let json = json else {return nil}
         id = json["id"] as? Int ?? 0
@@ -46,7 +45,7 @@ struct ColoursModel {
         rank = json["rank"] as? Int ?? 0
 
         dateCreated = json["dateCreated"] as? String ?? ""
-       
+
         //colours
         hex = json["hex"] as? String ?? ""
         rgb = json["rgb"] as? [String: Any] ?? [:]
@@ -57,20 +56,19 @@ struct ColoursModel {
         imageUrl = json["imageUrl"] as? String ?? ""
         badgeUrl = json["badgeUrl"] as? String ?? ""
         apiUrl = json["apiUrl"] as? String ?? ""
-        
+
         //patterns
         colors = json["colors"] as? [Any] ?? []
         template = json["template"] as? [String: Any] ?? [:]
 
     }
-    
+
 }
 
-
-extension ColoursModel : Parceable {
-    static func parseObject(dictionary: [String : AnyObject]) -> Result<ColoursModel, ErrorResult> {
-        if let _ = dictionary["id"]{
-            guard let result = ColoursModel.init(json: dictionary)else{
+extension ColoursModel: Parceable {
+    static func parseObject(dictionary: [String: AnyObject]) -> Result<ColoursModel, ErrorResult> {
+        if let _ = dictionary["id"] {
+            guard let result = ColoursModel.init(json: dictionary)else {
                 return Result.failure(ErrorResult.parser(string: "Unable to parse conversion rate"))
             }
             return Result.success(result)

@@ -10,9 +10,9 @@ import XCTest
 @testable import RandomColors
 
 class ColoursServiceCallTests: XCTestCase {
-    
+
     func testCancelRequest() {
-        let service : ColoursServiceCall! = ColoursServiceCall()
+        let service: ColoursServiceCall! = ColoursServiceCall()
         service.fetchConverter(APIConstants.colorsURL) { (_) in
         }
         service.cancelFetchService()

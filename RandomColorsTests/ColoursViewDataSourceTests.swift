@@ -10,13 +10,13 @@ import XCTest
 @testable import RandomColors
 
 class ColoursViewDataSourceTests: XCTestCase {
-    var dataSource : ColoursViewDataSource?
-    
+    var dataSource: ColoursViewDataSource?
+
     override func setUp() {
         super.setUp()
         dataSource = ColoursViewDataSource()
     }
-    
+
     override func tearDown() {
         dataSource = nil
         super.tearDown()
@@ -31,9 +31,9 @@ class ColoursViewDataSourceTests: XCTestCase {
         XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 50), 60, "Expected 60 cell in collection view")
 //        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 0, "Expected no cell in collection view")
     }
-    
+
     func testValueInDataSource() {
-        let responseResults:[ColoursModel] = valuesFromJSON()
+        let responseResults: [ColoursModel] = valuesFromJSON()
         dataSource?.data.value = responseResults
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: layout)
@@ -43,7 +43,7 @@ class ColoursViewDataSourceTests: XCTestCase {
         XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 60, "Expected 60 cell in collection view")
 //        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), responseResults.count, "Expected responseResults.count cell in collection view")
     }
-    
+
     func testValueCell() {
         dataSource?.data.value = valuesFromJSON()
         let layout = UICollectionViewFlowLayout()
@@ -56,16 +56,16 @@ class ColoursViewDataSourceTests: XCTestCase {
             return
         }
     }
- 
-    func valuesFromJSON() ->[ColoursModel]{
+
+    func valuesFromJSON() -> [ColoursModel] {
         var responseResults = [ColoursModel]()
         guard let data = FileManager.readJsonFile(forResource: "colors") else {
             XCTAssert(false, "Can't get data from colors.json")
             return responseResults
         }
-        let completion : ((Result<[ColoursModel], ErrorResult>) -> Void) = { result in
+        let completion: ((Result<[ColoursModel], ErrorResult>) -> Void) = { result in
             switch result {
-            case .failure(_):
+            case .failure:
                 XCTAssert(false, "Expected valid flickrsample")
             case .success(let converter):
                 print(converter)
@@ -76,7 +76,7 @@ class ColoursViewDataSourceTests: XCTestCase {
         ParserHelper.parse(data: data, completion: completion)
         return responseResults
     }
-    
+
 }
 
 extension FileManager {
@@ -92,4 +92,3 @@ extension FileManager {
         return nil
     }
 }
-

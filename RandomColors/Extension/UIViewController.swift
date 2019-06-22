@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UIViewController{
+extension UIViewController {
     // Returns the error message
-    func showAlert(title: String?, message: String?){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
+    func showAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) -> Void in
         }))
         self.present(alert, animated: true, completion: nil)
     }
