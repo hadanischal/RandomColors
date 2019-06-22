@@ -16,16 +16,16 @@ enum Method: String {
 struct APIConstants {
     static let baseURLString = "http://www.colourlovers.com/api/"
     static let searchKey = "random?format=json"
-    
+
     static var colorsURL: String {
         return generalURL(method: .colors)
     }
-    
+
     static var patternsURL: String {
         return generalURL(method: .patterns)
     }
-    
-    //MARK: -  General Methods
+
+    // MARK: - General Methods
     private static func generalURL(method: Method) -> String {
         let finalURL = baseURLString + method.rawValue + searchKey
         return finalURL

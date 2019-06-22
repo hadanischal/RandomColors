@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIImageView{
-    
+extension UIImageView {
+
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -20,7 +20,7 @@ extension UIImageView{
             layer.masksToBounds = newValue > 0
         }
     }
-    
+
     @IBInspectable
     var borderWidth: CGFloat {
         get {
@@ -30,7 +30,7 @@ extension UIImageView{
             layer.borderWidth = newValue
         }
     }
-    
+
     @IBInspectable
     var borderColor: UIColor? {
         get {
@@ -41,7 +41,7 @@ extension UIImageView{
             layer.borderColor = newValue?.cgColor
         }
     }
-    
+
     @IBInspectable
     var shadowRadius: CGFloat {
         get {

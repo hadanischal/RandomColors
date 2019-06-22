@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495A198D32AD370C98011847 /* Pods_RandomColorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */; };
+		AAC352F062F84CB907D5A7E3 /* Pods_RandomColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C879379210617891CE7432 /* Pods_RandomColors.framework */; };
 		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF22AB3020F19BEC0009D6E5 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB2F20F19BEC0009D6E5 /* colors.json */; };
 		AF22AB3220F19C1B0009D6E5 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB3120F19C1B0009D6E5 /* patterns.json */; };
 		AF22AB3420F19E670009D6E5 /* ColoursViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */; };
 		AF22AB3620F1A1F70009D6E5 /* ColoursServiceCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB3520F1A1F70009D6E5 /* ColoursServiceCallTests.swift */; };
 		AF22AB3820F1A2B00009D6E5 /* ColoursModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB3720F1A2B00009D6E5 /* ColoursModelTests.swift */; };
+		AF4098E922BE69BC0067AFA0 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF4098E822BE69BC0067AFA0 /* .swiftlint.yml */; };
 		AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */; };
 		AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */; };
 		AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92D8220EF409C0030D852 /* AppDelegate.swift */; };
@@ -45,6 +48,7 @@
 		AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF320EF98130030D852 /* DynamicValue.swift */; };
 		AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */; };
 		AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DF820EF9D820030D852 /* ColoursModel.swift */; };
+		E1B6C37422D924EE078D0F67 /* Pods_RandomColorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14E8FB27B1525E60FAF2381 /* Pods_RandomColorsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +69,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038163E460DB05D10A83FF15 /* Pods-RandomColorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.release.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
+		4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsUITests/Pods-RandomColorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF22AB2F20F19BEC0009D6E5 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		AF22AB3120F19C1B0009D6E5 /* patterns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
 		AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewDataSourceTests.swift; sourceTree = "<group>"; };
 		AF22AB3520F1A1F70009D6E5 /* ColoursServiceCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCallTests.swift; sourceTree = "<group>"; };
 		AF22AB3720F1A2B00009D6E5 /* ColoursModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursModelTests.swift; sourceTree = "<group>"; };
+		AF4098E822BE69BC0067AFA0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF4D9A2120F099D500FA6580 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		AFD92D7F20EF409C0030D852 /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +118,11 @@
 		AFD92DF320EF98130030D852 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCall.swift; sourceTree = "<group>"; };
 		AFD92DF820EF9D820030D852 /* ColoursModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursModel.swift; sourceTree = "<group>"; };
+		B0C879379210617891CE7432 /* Pods_RandomColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14E8FB27B1525E60FAF2381 /* Pods_RandomColorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC648CAADEB715942BA5F792 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.debug.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
+		DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E2324FD5785EB7A7ACCD8 /* Pods-RandomColorsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsUITests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorsUITests/Pods-RandomColorsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC352F062F84CB907D5A7E3 /* Pods_RandomColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B6C37422D924EE078D0F67 /* Pods_RandomColorsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,20 +146,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A198D32AD370C98011847 /* Pods_RandomColorsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07701DD5385DCBE6F355DB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0C879379210617891CE7432 /* Pods_RandomColors.framework */,
+				B14E8FB27B1525E60FAF2381 /* Pods_RandomColorsTests.framework */,
+				DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C2BD7EACE32A27FE912A0EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC648CAADEB715942BA5F792 /* Pods-RandomColors.debug.xcconfig */,
+				0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */,
+				4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */,
+				038163E460DB05D10A83FF15 /* Pods-RandomColorsTests.release.xcconfig */,
+				AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */,
+				F11E2324FD5785EB7A7ACCD8 /* Pods-RandomColorsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AFD92D7620EF409C0030D852 = {
 			isa = PBXGroup;
 			children = (
+				AF4098E822BE69BC0067AFA0 /* .swiftlint.yml */,
 				AFD92DB320EF427B0030D852 /* .gitignore */,
 				AFD92D8120EF409C0030D852 /* RandomColors */,
 				AFD92D9920EF409D0030D852 /* RandomColorsTests */,
 				AFD92DA420EF409D0030D852 /* RandomColorsUITests */,
 				AFD92D8020EF409C0030D852 /* Products */,
+				6C2BD7EACE32A27FE912A0EE /* Pods */,
+				07701DD5385DCBE6F355DB50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -369,6 +412,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD92DAA20EF409E0030D852 /* Build configuration list for PBXNativeTarget "RandomColors" */;
 			buildPhases = (
+				AD06842AD11A4B0405351B80 /* [CP] Check Pods Manifest.lock */,
 				AFD92D7B20EF409C0030D852 /* Sources */,
 				AFD92D7C20EF409C0030D852 /* Frameworks */,
 				AFD92D7D20EF409C0030D852 /* Resources */,
@@ -386,6 +430,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD92DAD20EF409E0030D852 /* Build configuration list for PBXNativeTarget "RandomColorsTests" */;
 			buildPhases = (
+				C7A89EDE86B52811FEACF69C /* [CP] Check Pods Manifest.lock */,
 				AFD92D9220EF409D0030D852 /* Sources */,
 				AFD92D9320EF409D0030D852 /* Frameworks */,
 				AFD92D9420EF409D0030D852 /* Resources */,
@@ -404,6 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD92DB020EF409E0030D852 /* Build configuration list for PBXNativeTarget "RandomColorsUITests" */;
 			buildPhases = (
+				B42F64A98266D8731D57F5C9 /* [CP] Check Pods Manifest.lock */,
 				AFD92D9D20EF409D0030D852 /* Sources */,
 				AFD92D9E20EF409D0030D852 /* Frameworks */,
 				AFD92D9F20EF409D0030D852 /* Resources */,
@@ -430,13 +476,16 @@
 				TargetAttributes = {
 					AFD92D7E20EF409C0030D852 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					AFD92D9520EF409D0030D852 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = AFD92D7E20EF409C0030D852;
 					};
 					AFD92DA020EF409D0030D852 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = AFD92D7E20EF409C0030D852;
 					};
 				};
@@ -466,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4098E922BE69BC0067AFA0 /* .swiftlint.yml in Resources */,
 				AFD92DB420EF427B0030D852 /* .gitignore in Resources */,
 				AFD92D9020EF409D0030D852 /* LaunchScreen.storyboard in Resources */,
 				AFD92D8D20EF409D0030D852 /* Assets.xcassets in Resources */,
@@ -490,6 +540,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD06842AD11A4B0405351B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42F64A98266D8731D57F5C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColorsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A89EDE86B52811FEACF69C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColorsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFD92D7B20EF409C0030D852 /* Sources */ = {
@@ -696,6 +815,7 @@
 		};
 		AFD92DAB20EF409E0030D852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC648CAADEB715942BA5F792 /* Pods-RandomColors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,13 +828,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AFD92DAC20EF409E0030D852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -727,13 +848,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		AFD92DAE20EF409E0030D852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,7 +868,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColors.app/RandomColors";
 			};
@@ -754,6 +876,7 @@
 		};
 		AFD92DAF20EF409E0030D852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038163E460DB05D10A83FF15 /* Pods-RandomColorsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -766,7 +889,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColors.app/RandomColors";
 			};
@@ -774,6 +897,7 @@
 		};
 		AFD92DB120EF409E0030D852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -785,7 +909,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RandomColors;
 			};
@@ -793,6 +917,7 @@
 		};
 		AFD92DB220EF409E0030D852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11E2324FD5785EB7A7ACCD8 /* Pods-RandomColorsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,7 +929,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Nischalhada.RandomColorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RandomColors;
 			};

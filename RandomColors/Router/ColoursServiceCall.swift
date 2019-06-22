@@ -14,13 +14,13 @@ protocol ColoursServiceCallProtocol: class {
 
 final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
     static let shared = ColoursServiceCall()
-    var task : URLSessionTask?
-    
+    var task: URLSessionTask?
+
     func fetchConverter(_ urlString: String, completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void)) {
         self.cancelFetchService()
         task = NetworkService().loadData(urlString: urlString, completion: self.networkResult(completion: completion))
     }
-    
+
     func cancelFetchService() {
         if let task = task {
             task.cancel()
@@ -28,4 +28,3 @@ final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
         task = nil
     }
 }
-

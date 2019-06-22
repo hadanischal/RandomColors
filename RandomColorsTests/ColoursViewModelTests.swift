@@ -20,46 +20,46 @@ class ColoursViewModelTests: XCTestCase {
             }
         }
     }
-    
-    var viewModel : ColoursViewModel?
-    var dataSource : GenericDataSource<ColoursModel>?
-    fileprivate var service : MockPhotosServiceCall?
-    
+
+    var viewModel: ColoursViewModel?
+    var dataSource: GenericDataSource<ColoursModel>?
+    fileprivate var service: MockPhotosServiceCall?
+
     override func setUp() {
         super.setUp()
         self.service = MockPhotosServiceCall()
         self.dataSource = GenericDataSource<ColoursModel>()
         self.viewModel = ColoursViewModel(service: service, dataSource: dataSource)
     }
-    
+
     override func tearDown() {
         self.viewModel = nil
         self.dataSource = nil
         self.service = nil
         super.tearDown()
     }
-    
+
     func testfetchData() {
-        let dictionary:[String: Any] = [:]
-        guard let result = ColoursModel.init(json: dictionary)else{
+        let dictionary: [String: Any] = [:]
+        guard let result = ColoursModel.init(json: dictionary)else {
             XCTAssert(false, "ViewModel should not be able to fetch without ColoursModel")
             return
         }
         service?.fetchedData = [result]
-        viewModel?.fetchServiceCall() { (result) in
+        viewModel?.fetchServiceCall { (result) in
             switch result {
-            case .failure(_) :
+            case .failure :
                 XCTAssert(false, "ViewModel should not be able to fetch without service")
             default: break
             }
         }
     }
-    
+
     func testfetchNoDatas() {
         service?.fetchedData = nil
-        viewModel?.fetchServiceCall() { (result) in
+        viewModel?.fetchServiceCall { (result) in
             switch result {
-            case .success(_) :
+            case .success :
                 XCTAssert(false, "ViewModel should not be able to fetch")
             default: break
             }
