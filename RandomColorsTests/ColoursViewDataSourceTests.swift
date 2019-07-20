@@ -29,7 +29,6 @@ class ColoursViewDataSourceTests: XCTestCase {
         collectionView.dataSource = dataSource
         XCTAssertEqual(dataSource?.numberOfSections(in: collectionView), 1, "Expected one section in collection view")
         XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 50), 60, "Expected 60 cell in collection view")
-//        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 0, "Expected no cell in collection view")
     }
 
     func testValueInDataSource() {
@@ -41,7 +40,6 @@ class ColoursViewDataSourceTests: XCTestCase {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         XCTAssertEqual(dataSource?.numberOfSections(in: collectionView), 1, "Expected one section in table view")
         XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), 60, "Expected 60 cell in collection view")
-//        XCTAssertEqual(dataSource?.collectionView(collectionView, numberOfItemsInSection: 0), responseResults.count, "Expected responseResults.count cell in collection view")
     }
 
     func testValueCell() {

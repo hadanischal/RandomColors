@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		495A198D32AD370C98011847 /* Pods_RandomColorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */; };
 		AAC352F062F84CB907D5A7E3 /* Pods_RandomColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C879379210617891CE7432 /* Pods_RandomColors.framework */; };
+		AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */; };
+		AF19E5D022E2D23D0056960C /* MockColoursServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CF22E2D23D0056960C /* MockColoursServiceCall.swift */; };
+		AF19E5D222E2D2E90056960C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D122E2D2E90056960C /* MockData.swift */; };
+		AF19E5D422E2D6E70056960C /* ColoursViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */; };
+		AF19E5D622E2D70D0056960C /* ColoursServiceCallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */; };
+		AF19E5D822E2D7770056960C /* ImageManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */; };
 		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF22AB3020F19BEC0009D6E5 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB2F20F19BEC0009D6E5 /* colors.json */; };
 		AF22AB3220F19C1B0009D6E5 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB3120F19C1B0009D6E5 /* patterns.json */; };
@@ -73,6 +79,12 @@
 		0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.release.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
 		4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsUITests/Pods-RandomColorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModel.swift; sourceTree = "<group>"; };
+		AF19E5CF22E2D23D0056960C /* MockColoursServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockColoursServiceCall.swift; sourceTree = "<group>"; };
+		AF19E5D122E2D2E90056960C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelProtocol.swift; sourceTree = "<group>"; };
+		AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCallProtocol.swift; sourceTree = "<group>"; };
+		AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerProtocol.swift; sourceTree = "<group>"; };
 		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF22AB2F20F19BEC0009D6E5 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		AF22AB3120F19C1B0009D6E5 /* patterns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
@@ -176,6 +188,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF19E5CD22E2D1EF0056960C /* MockResources */ = {
+			isa = PBXGroup;
+			children = (
+				AF22AB2F20F19BEC0009D6E5 /* colors.json */,
+				AF22AB3120F19C1B0009D6E5 /* patterns.json */,
+			);
+			path = MockResources;
+			sourceTree = "<group>";
+		};
+		AF19E5CE22E2D1FE0056960C /* MockClass */ = {
+			isa = PBXGroup;
+			children = (
+				AF19E5CF22E2D23D0056960C /* MockColoursServiceCall.swift */,
+				AF19E5D122E2D2E90056960C /* MockData.swift */,
+			);
+			path = MockClass;
+			sourceTree = "<group>";
+		};
 		AFD92D7620EF409C0030D852 = {
 			isa = PBXGroup;
 			children = (
@@ -224,14 +254,14 @@
 		AFD92D9920EF409D0030D852 /* RandomColorsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5CD22E2D1EF0056960C /* MockResources */,
+				AF19E5CE22E2D1FE0056960C /* MockClass */,
 				AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */,
 				AF22AB3320F19E670009D6E5 /* ColoursViewDataSourceTests.swift */,
 				AF22AB3520F1A1F70009D6E5 /* ColoursServiceCallTests.swift */,
 				AF22AB3720F1A2B00009D6E5 /* ColoursModelTests.swift */,
 				AFD92D9A20EF409D0030D852 /* RandomColorsTests.swift */,
 				AFD92D9C20EF409D0030D852 /* Info.plist */,
-				AF22AB2F20F19BEC0009D6E5 /* colors.json */,
-				AF22AB3120F19C1B0009D6E5 /* patterns.json */,
 			);
 			path = RandomColorsTests;
 			sourceTree = "<group>";
@@ -274,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DF820EF9D820030D852 /* ColoursModel.swift */,
+				AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +413,7 @@
 		AFD92DEB20EF95940030D852 /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */,
 				AFD92DEC20EF95A40030D852 /* ImageManager.swift */,
 			);
 			path = ImageManager;
@@ -390,6 +422,7 @@
 		AFD92DEE20EF972C0030D852 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */,
 				AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */,
 				AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */,
 				AFD92DF320EF98130030D852 /* DynamicValue.swift */,
@@ -400,6 +433,7 @@
 		AFD92DF520EF9BF60030D852 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */,
 				AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */,
 			);
 			path = Router;
@@ -618,11 +652,13 @@
 				AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */,
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
 				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
+				AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
 				AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */,
+				AF19E5D622E2D70D0056960C /* ColoursServiceCallProtocol.swift in Sources */,
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
@@ -638,8 +674,10 @@
 				AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */,
 				AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
+				AF19E5D822E2D7770056960C /* ImageManagerProtocol.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
 				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
+				AF19E5D422E2D6E70056960C /* ColoursViewModelProtocol.swift in Sources */,
 				AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,9 +687,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */,
+				AF19E5D022E2D23D0056960C /* MockColoursServiceCall.swift in Sources */,
 				AF22AB3420F19E670009D6E5 /* ColoursViewDataSourceTests.swift in Sources */,
 				AFD92D9B20EF409D0030D852 /* RandomColorsTests.swift in Sources */,
 				AF22AB3620F1A1F70009D6E5 /* ColoursServiceCallTests.swift in Sources */,
+				AF19E5D222E2D2E90056960C /* MockData.swift in Sources */,
 				AF22AB3820F1A2B00009D6E5 /* ColoursModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
