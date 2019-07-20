@@ -12,6 +12,9 @@
 		AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */; };
 		AF19E5D022E2D23D0056960C /* MockColoursServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CF22E2D23D0056960C /* MockColoursServiceCall.swift */; };
 		AF19E5D222E2D2E90056960C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D122E2D2E90056960C /* MockData.swift */; };
+		AF19E5D422E2D6E70056960C /* ColoursViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */; };
+		AF19E5D622E2D70D0056960C /* ColoursServiceCallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */; };
+		AF19E5D822E2D7770056960C /* ImageManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */; };
 		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF22AB3020F19BEC0009D6E5 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB2F20F19BEC0009D6E5 /* colors.json */; };
 		AF22AB3220F19C1B0009D6E5 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB3120F19C1B0009D6E5 /* patterns.json */; };
@@ -79,6 +82,9 @@
 		AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModel.swift; sourceTree = "<group>"; };
 		AF19E5CF22E2D23D0056960C /* MockColoursServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockColoursServiceCall.swift; sourceTree = "<group>"; };
 		AF19E5D122E2D2E90056960C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelProtocol.swift; sourceTree = "<group>"; };
+		AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursServiceCallProtocol.swift; sourceTree = "<group>"; };
+		AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerProtocol.swift; sourceTree = "<group>"; };
 		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF22AB2F20F19BEC0009D6E5 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		AF22AB3120F19C1B0009D6E5 /* patterns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
@@ -407,6 +413,7 @@
 		AFD92DEB20EF95940030D852 /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D722E2D7770056960C /* ImageManagerProtocol.swift */,
 				AFD92DEC20EF95A40030D852 /* ImageManager.swift */,
 			);
 			path = ImageManager;
@@ -415,6 +422,7 @@
 		AFD92DEE20EF972C0030D852 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D322E2D6E70056960C /* ColoursViewModelProtocol.swift */,
 				AFD92DEF20EF97820030D852 /* ColoursViewModel.swift */,
 				AFD92DF120EF97CF0030D852 /* ColoursViewDataSource.swift */,
 				AFD92DF320EF98130030D852 /* DynamicValue.swift */,
@@ -425,6 +433,7 @@
 		AFD92DF520EF9BF60030D852 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				AF19E5D522E2D70D0056960C /* ColoursServiceCallProtocol.swift */,
 				AFD92DF620EF9C1E0030D852 /* ColoursServiceCall.swift */,
 			);
 			path = Router;
@@ -649,6 +658,7 @@
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
 				AFD92DE520EF935D0030D852 /* NetworkService.swift in Sources */,
 				AFD92DF420EF98130030D852 /* DynamicValue.swift in Sources */,
+				AF19E5D622E2D70D0056960C /* ColoursServiceCallProtocol.swift in Sources */,
 				AFD92DE020EF92F30030D852 /* ErrorResult.swift in Sources */,
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
@@ -664,8 +674,10 @@
 				AF4D9A2020F0998B00FA6580 /* UIViewController.swift in Sources */,
 				AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
+				AF19E5D822E2D7770056960C /* ImageManagerProtocol.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
 				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
+				AF19E5D422E2D6E70056960C /* ColoursViewModelProtocol.swift in Sources */,
 				AFD92DE720EF93700030D852 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

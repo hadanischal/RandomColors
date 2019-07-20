@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ColoursViewModel {
+class ColoursViewModel: ColoursViewModelProtocol {
     // MARK: - Input
     weak var dataSource: GenericDataSource<ColoursModel>?
+    private var service: ColoursServiceCallProtocol?
 
     // MARK: - Output
-    weak var service: ColoursServiceCallProtocol?
     var onErrorHandling: ((ErrorResult?) -> Void)?
 
     init(service: ColoursServiceCallProtocol? = ColoursServiceCall.shared, dataSource: GenericDataSource<ColoursModel>?) {

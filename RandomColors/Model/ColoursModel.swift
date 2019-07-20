@@ -40,3 +40,9 @@ extension ColoursModel: Parceable {
         }
     }
 }
+
+extension ColoursModel {
+    static var empty: ColoursModel {
+        return ColoursModel(id: nil, title: "title", userName: nil, numViews: nil, numVotes: nil, numComments: nil, numHearts: nil, rank: nil, dateCreated: nil, hex: nil, description: nil, url: nil, imageUrl: nil, badgeUrl: nil, apiUrl: nil, colors: nil, template: nil)
+    }
+}

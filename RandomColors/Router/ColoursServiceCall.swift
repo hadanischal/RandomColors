@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol ColoursServiceCallProtocol: class {
-    func fetchConverter(_ urlString: String, completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void))
-}
-
 final class ColoursServiceCall: NetworkHandler, ColoursServiceCallProtocol {
     static let shared = ColoursServiceCall()
     var task: URLSessionTask?

@@ -8,11 +8,7 @@
 
 import UIKit
 
-protocol ImageManaging: class {
-    func downloadImageFromURL(_ urlString: String, completion: ((_ success: Bool, _ image: UIImage?) -> Void)?)
-}
-
-class ImageManager: NSObject {
+class ImageManager: ImageManagerProtocol {
     static let sharedInstance = ImageManager()
 
     var imageCache = [String: UIImage]()

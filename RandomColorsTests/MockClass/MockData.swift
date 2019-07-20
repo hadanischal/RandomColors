@@ -10,7 +10,7 @@ import XCTest
 @testable import RandomColors
 
 class MockData {
-    
+
     func getColoursData() -> Data {
         guard let data = self.readJson(forResource: "colors") else {
             XCTAssert(false, "Can't get data from colors.json")
@@ -18,7 +18,7 @@ class MockData {
         }
         return data
     }
-    
+
     func getColoursModel() -> ColoursModel {
         var responseResults: ColoursModel!
         guard let data = self.readJson(forResource: "colors") else {
@@ -37,7 +37,7 @@ class MockData {
         ParserHelper.parse(data: data, completion: completion)
         return responseResults
     }
-    
+
     func getFeedslist() -> TemplateModel {
         guard let list = getColoursModel().template else {
             return TemplateModel(title: nil, url: nil)
@@ -53,7 +53,7 @@ extension MockData {
             XCTFail("Missing file: \(fileName).json")
             return nil
         }
-        
+
         do {
             let data = try Data(contentsOf: url)
             return data
