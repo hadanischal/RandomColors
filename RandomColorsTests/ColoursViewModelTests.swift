@@ -10,42 +10,27 @@ import XCTest
 @testable import RandomColors
 
 class ColoursViewModelTests: XCTestCase {
-    fileprivate class MockPhotosServiceCall: ColoursServiceCallProtocol {
-        var fetchedData: [ColoursModel]?
-        func fetchConverter(_ urlString: String, completion: @escaping ((Result<[ColoursModel], ErrorResult>) -> Void)) {
-            if let data = fetchedData {
-                completion(Result.success(data))
-            } else {
-                completion(Result.failure(ErrorResult.custom(string: "No converter")))
-            }
-        }
-    }
 
     var viewModel: ColoursViewModel?
     var dataSource: GenericDataSource<ColoursModel>?
-    fileprivate var service: MockPhotosServiceCall?
+    private var mockService: MockColoursServiceCall?
 
     override func setUp() {
         super.setUp()
-        self.service = MockPhotosServiceCall()
+        self.mockService = MockColoursServiceCall()
         self.dataSource = GenericDataSource<ColoursModel>()
-        self.viewModel = ColoursViewModel(service: service, dataSource: dataSource)
+        self.viewModel = ColoursViewModel(service: mockService, dataSource: dataSource)
     }
 
     override func tearDown() {
         self.viewModel = nil
         self.dataSource = nil
-        self.service = nil
+        self.mockService = nil
         super.tearDown()
     }
 
     func testfetchData() {
-        let dictionary: [String: Any] = [:]
-        guard let result = ColoursModel.init(json: dictionary)else {
-            XCTAssert(false, "ViewModel should not be able to fetch without ColoursModel")
-            return
-        }
-        service?.fetchedData = [result]
+        mockService?.fetchedData = [MockData().getColoursModel()]
         viewModel?.fetchServiceCall { (result) in
             switch result {
             case .failure :
@@ -56,7 +41,7 @@ class ColoursViewModelTests: XCTestCase {
     }
 
     func testfetchNoDatas() {
-        service?.fetchedData = nil
+        mockService?.fetchedData = nil
         viewModel?.fetchServiceCall { (result) in
             switch result {
             case .success :

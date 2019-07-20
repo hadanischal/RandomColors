@@ -21,7 +21,7 @@ class ColoursModelTests: XCTestCase {
 
     func testExampleEmptySearchResults() {
         let data = Data()
-        let completion: ((Result<ColoursModel, ErrorResult>) -> Void) = { result in
+        let completion: ((Result<[ColoursModel], ErrorResult>) -> Void) = { result in
             switch result {
             case .success:
                 XCTAssert(false, "Expected failure when no data")
@@ -50,8 +50,7 @@ class ColoursModelTests: XCTestCase {
     }
 
     func testWrongKeySearchResults() {
-        let dictionary = ["testObject": 123 as AnyObject]
-        let result = ColoursModel.parseObject(dictionary: dictionary)
+        let result = ColoursModel.parseObject(data: Data())
         switch result {
         case .success:
             XCTAssert(false, "Expected failure when wrong data")
