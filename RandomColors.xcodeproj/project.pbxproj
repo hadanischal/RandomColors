@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		495A198D32AD370C98011847 /* Pods_RandomColorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */; };
 		AAC352F062F84CB907D5A7E3 /* Pods_RandomColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C879379210617891CE7432 /* Pods_RandomColors.framework */; };
+		AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */; };
 		AF22AB2E20F1972A0009D6E5 /* ColoursViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */; };
 		AF22AB3020F19BEC0009D6E5 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB2F20F19BEC0009D6E5 /* colors.json */; };
 		AF22AB3220F19C1B0009D6E5 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22AB3120F19C1B0009D6E5 /* patterns.json */; };
@@ -73,6 +74,7 @@
 		0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.release.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
 		4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsUITests/Pods-RandomColorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModel.swift; sourceTree = "<group>"; };
 		AF22AB2D20F1972A0009D6E5 /* ColoursViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoursViewModelTests.swift; sourceTree = "<group>"; };
 		AF22AB2F20F19BEC0009D6E5 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		AF22AB3120F19C1B0009D6E5 /* patterns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD92DF820EF9D820030D852 /* ColoursModel.swift */,
+				AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				AFD92DF220EF97CF0030D852 /* ColoursViewDataSource.swift in Sources */,
 				AFD92DBF20EF46700030D852 /* CGFloat.swift in Sources */,
 				AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */,
+				AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */,
 				AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */,
 				AFD92DF720EF9C1E0030D852 /* ColoursServiceCall.swift in Sources */,
 				AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */,
