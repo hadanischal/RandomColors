@@ -29,27 +29,32 @@ extension UIColor {
 }
 
 // MARK: - convert a hex color to a UIColor
+
 extension UIColor {
-
     public convenience init?(hex: String) {
-        var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        let red, green, blue, alpha: CGFloat
 
-        if (cString.hasPrefix("#")) {
-            cString.remove(at: cString.startIndex)
+        if hex.hasPrefix("#") {
+            let start = hex.index(hex.startIndex, offsetBy: 1)
+            let hexColor = String(hex[start...])
+
+            if hexColor.count == 6 {
+                let scanner = Scanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+
+                if scanner.scanHexInt64(&hexNumber) {
+                    red = CGFloat((hexNumber & 0xFF0000) >> 16) / 255
+                    green = CGFloat((hexNumber & 0x00FF00) >> 8) / 255
+                    blue = CGFloat((hexNumber & 0x0000FF)) / 255
+                    alpha = CGFloat(1.0)
+
+                    self.init(red: red, green: green, blue: blue, alpha: alpha)
+                    return
+                }
+            }
         }
 
-        if ((cString.count) != 6) {
-            return nil
-        } else {
-            var rgbValue: UInt32 = 0
-            Scanner(string: cString).scanHexInt32(&rgbValue)
-            self.init(
-                red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-                green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-                blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-                alpha: CGFloat(1.0)
-            )
-        }
+        return nil
     }
 }
 

@@ -23,6 +23,7 @@
 
 import SystemConfiguration
 import Foundation
+//swiftlint:disable identifier_name
 
 public let ReachabilityChangedNotification = NSNotification.Name("ReachabilityChangedNotification")
 

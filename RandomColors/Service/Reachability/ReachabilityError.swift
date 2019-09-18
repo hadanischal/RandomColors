@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//swiftlint:disable identifier_name
 public enum ReachabilityError: Error {
     case FailedToCreateWithAddress(sockaddr_in)
     case FailedToCreateWithHostname(String)

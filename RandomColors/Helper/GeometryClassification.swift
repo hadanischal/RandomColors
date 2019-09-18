@@ -9,8 +9,8 @@
 import UIKit
 
 enum GeometryClassification: UInt32 {
-    case Circle
-    case Square
+    case circle
+    case square
 
     private static let _count: GeometryClassification.RawValue = {
         var maxValue: UInt32 = 0

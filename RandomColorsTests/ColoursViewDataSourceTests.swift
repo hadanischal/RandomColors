@@ -68,7 +68,6 @@ class ColoursViewDataSourceTests: XCTestCase {
             case .success(let converter):
                 print(converter)
                 responseResults = converter
-                break
             }
         }
         ParserHelper.parse(data: data, completion: completion)

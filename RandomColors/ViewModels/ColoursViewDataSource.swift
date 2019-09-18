@@ -22,8 +22,8 @@ class ColoursViewDataSource: GenericDataSource<ColoursModel>, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColoursViewCell", for: indexPath) as! ColoursViewCell
-        if self.data.value.count != 0 {
+        let cell: ColoursViewCell = collectionView.dequeueReusableCell(for: indexPath)
+        if !data.value.isEmpty {
             cell.coloursValue = self.data.value[0]
         }
         return cell

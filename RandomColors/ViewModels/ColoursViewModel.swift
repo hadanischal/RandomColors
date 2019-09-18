@@ -30,9 +30,9 @@ class ColoursViewModel: ColoursViewModelProtocol {
         var endpoint = APIConstants.baseURLString
 
         switch GeometryClassification.randomGeometry() {
-        case .Circle:
+        case .circle:
             endpoint = APIConstants.colorsURL
-        case .Square:
+        case .square:
             endpoint = APIConstants.patternsURL
         }
 
@@ -42,12 +42,10 @@ class ColoursViewModel: ColoursViewModelProtocol {
                 case .success(let converter) :
                     self.dataSource?.data.value = converter
                     completion?(Result.success(true))
-                    break
                 case .failure(let error) :
                     print("Parser error \(error)")
                     self.onErrorHandling?(error)
                     completion?(Result.failure(error))
-                    break
                 }
             }
         }
