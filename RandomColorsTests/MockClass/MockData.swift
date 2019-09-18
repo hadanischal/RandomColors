@@ -31,7 +31,6 @@ class MockData {
                 XCTAssert(false, "Expected valid converter")
             case .success(let result):
                 responseResults = result[0]
-                break
             }
         }
         ParserHelper.parse(data: data, completion: completion)

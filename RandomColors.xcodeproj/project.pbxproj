@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F678292331E0F000BFD78B /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F678282331E0F000BFD78B /* UICollectionView+Register.swift */; };
+		04F6782C2331E13D00BFD78B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6782B2331E13D00BFD78B /* ReusableView.swift */; };
 		495A198D32AD370C98011847 /* Pods_RandomColorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD902A28958D9C6CA1EF27E5 /* Pods_RandomColorsUITests.framework */; };
 		AAC352F062F84CB907D5A7E3 /* Pods_RandomColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C879379210617891CE7432 /* Pods_RandomColors.framework */; };
 		AF19E5CC22E2C8BA0056960C /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19E5CB22E2C8BA0056960C /* TemplateModel.swift */; };
@@ -76,6 +78,8 @@
 
 /* Begin PBXFileReference section */
 		038163E460DB05D10A83FF15 /* Pods-RandomColorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		04F678282331E0F000BFD78B /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
+		04F6782B2331E13D00BFD78B /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		0C16787B64C4299DC6B6BE7C /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.release.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
 		4CDC8DA3BFD09E133AD89749 /* Pods-RandomColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsTests/Pods-RandomColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE75848B7AA183436C4C4F6D /* Pods-RandomColorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorsUITests/Pods-RandomColorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +169,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04F6782A2331E12800BFD78B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04F6782B2331E13D00BFD78B /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		07701DD5385DCBE6F355DB50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +256,7 @@
 				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
 				AFD92DBB20EF46090030D852 /* Extension */,
+				04F6782A2331E12800BFD78B /* Protocols */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
 				AFD92D9120EF409D0030D852 /* Info.plist */,
 				AFD92D8920EF409C0030D852 /* RandomColors.xcdatamodeld */,
@@ -324,6 +337,7 @@
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
 				AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */,
+				04F678282331E0F000BFD78B /* UICollectionView+Register.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -450,6 +464,7 @@
 				AFD92D7B20EF409C0030D852 /* Sources */,
 				AFD92D7C20EF409C0030D852 /* Frameworks */,
 				AFD92D7D20EF409C0030D852 /* Resources */,
+				04F678272331DE0200BFD78B /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -576,6 +591,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04F678272331DE0200BFD78B /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		AD06842AD11A4B0405351B80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,6 +700,7 @@
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
 				AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */,
+				04F678292331E0F000BFD78B /* UICollectionView+Register.swift in Sources */,
 				AFD92DC120EF4C960030D852 /* ColoursViewController.swift in Sources */,
 				AFD92DE320EF93470030D852 /* NetworkMethod.swift in Sources */,
 				AFD92DF020EF97820030D852 /* ColoursViewModel.swift in Sources */,
@@ -675,6 +709,7 @@
 				AFD92DF920EF9D820030D852 /* ColoursModel.swift in Sources */,
 				AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */,
 				AF19E5D822E2D7770056960C /* ImageManagerProtocol.swift in Sources */,
+				04F6782C2331E13D00BFD78B /* ReusableView.swift in Sources */,
 				AFD92DE920EF953E0030D852 /* Parceable.swift in Sources */,
 				AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */,
 				AF19E5D422E2D6E70056960C /* ColoursViewModelProtocol.swift in Sources */,

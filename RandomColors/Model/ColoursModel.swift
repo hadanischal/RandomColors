@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//swiftlint:disable line_length
 struct ColoursModel: Codable {
     let id: Int?
     let title: String?

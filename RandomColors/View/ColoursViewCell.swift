@@ -15,7 +15,7 @@ class ColoursViewCell: UICollectionViewCell {
             guard let data = coloursValue else {
                 return
             }
-            if let _  = data.template,
+            if data.template != nil,
                  let url = data.imageUrl {
                 ImageManager.sharedInstance.downloadImageFromURL(url) { (success, image) -> Void in
                     if success && image != nil {
@@ -47,9 +47,9 @@ class ColoursViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         switch GeometryClassification.randomGeometry() {
-        case .Circle:
+        case .circle:
             self.setCircularImageView()
-        case .Square:
+        case .square:
             self.setSquareImageView()
         }
     }
@@ -62,6 +62,7 @@ class ColoursViewCell: UICollectionViewCell {
     }
 }
 
+extension ColoursViewCell: ReusableView{}
 //    override var isSelected: Bool{
 //        didSet{
 //            if self.isSelected{
