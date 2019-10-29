@@ -49,7 +49,7 @@ class ColoursViewDataSourceTests: XCTestCase {
         collectionView.dataSource = dataSource
         collectionView.register(ColoursViewCell.self, forCellWithReuseIdentifier: "ColoursViewCell")
         let indexPath = IndexPath(row: 0, section: 0)
-        guard let _ = dataSource?.collectionView(collectionView, cellForItemAt: indexPath)as? ColoursViewCell else {
+        guard let coloursViewCell = dataSource?.collectionView(collectionView, cellForItemAt: indexPath) as? ColoursViewCell else {
             XCTAssert(false, "Expected collectionViewCell class")
             return
         }

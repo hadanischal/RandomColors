@@ -41,7 +41,7 @@
 		AFD92DC920EF5F540030D852 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DC820EF5F540030D852 /* UIImageView.swift */; };
 		AFD92DCF20EF89A60030D852 /* GeometryClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */; };
 		AFD92DD220EF8CA90030D852 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD120EF8CA90030D852 /* APIConstants.swift */; };
-		AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */; };
+		AFD92DD520EF8CFA0030D852 /* ColourConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD420EF8CFA0030D852 /* ColourConstant.swift */; };
 		AFD92DD920EF926D0030D852 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DD820EF926D0030D852 /* Reachability.swift */; };
 		AFD92DDB20EF928A0030D852 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */; };
 		AFD92DDE20EF92E30030D852 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD92DDD20EF92E30030D852 /* Result.swift */; };
@@ -119,7 +119,7 @@
 		AFD92DC820EF5F540030D852 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		AFD92DCE20EF89A60030D852 /* GeometryClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryClassification.swift; sourceTree = "<group>"; };
 		AFD92DD120EF8CA90030D852 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		AFD92DD420EF8CFA0030D852 /* ColourConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourConstant.swift; sourceTree = "<group>"; };
 		AFD92DD820EF926D0030D852 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		AFD92DDA20EF928A0030D852 /* ReachabilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityError.swift; sourceTree = "<group>"; };
 		AFD92DDD20EF92E30030D852 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -169,6 +169,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045D532E2368EA1300A1F658 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DBB20EF46090030D852 /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		045D532F2368EA8600A1F658 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				04F678282331E0F000BFD78B /* UICollectionView+Register.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		045D53302368EA9A00A1F658 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		04F6782A2331E12800BFD78B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,14 +272,13 @@
 				AFD92DB520EF45020030D852 /* AppDelegate */,
 				AFD92DB820EF453A0030D852 /* Model */,
 				AFD92DC220EF4DF30030D852 /* View */,
-				AFD92DB620EF45130030D852 /* Controller */,
 				AFD92DEE20EF972C0030D852 /* ViewModels */,
+				AFD92DB620EF45130030D852 /* ViewController */,
 				AFD92DB720EF452A0030D852 /* Storyboard */,
 				AFD92DD020EF8C8E0030D852 /* Service */,
 				AFD92DF520EF9BF60030D852 /* Router */,
-				AFD92DD320EF8CEB0030D852 /* ThemeColor */,
+				045D532E2368EA1300A1F658 /* Utility */,
 				AFD92DCD20EF896D0030D852 /* Helper */,
-				AFD92DBB20EF46090030D852 /* Extension */,
 				04F6782A2331E12800BFD78B /* Protocols */,
 				AFD92DBA20EF45A50030D852 /* Resources */,
 				AFD92D9120EF409D0030D852 /* Info.plist */,
@@ -296,12 +319,12 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		AFD92DB620EF45130030D852 /* Controller */ = {
+		AFD92DB620EF45130030D852 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				AFD92DC020EF4C960030D852 /* ColoursViewController.swift */,
 			);
-			path = Controller;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		AFD92DB720EF452A0030D852 /* Storyboard */ = {
@@ -333,11 +356,11 @@
 		AFD92DBB20EF46090030D852 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AFD92DD420EF8CFA0030D852 /* ColourConstant.swift */,
 				AFD92DBE20EF46700030D852 /* CGFloat.swift */,
 				AFD92DBC20EF46210030D852 /* UIColor.swift */,
 				AFD92DC820EF5F540030D852 /* UIImageView.swift */,
 				AF4D9A1F20F0998B00FA6580 /* UIViewController.swift */,
-				04F678282331E0F000BFD78B /* UICollectionView+Register.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -345,7 +368,8 @@
 		AFD92DC220EF4DF30030D852 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AFD92DC320EF4E0D0030D852 /* ColoursViewCell.swift */,
+				045D53302368EA9A00A1F658 /* CollectionViewCell */,
+				045D532F2368EA8600A1F658 /* CustomViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,14 +394,6 @@
 				AFD92DEA20EF95440030D852 /* Parceable */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		AFD92DD320EF8CEB0030D852 /* ThemeColor */ = {
-			isa = PBXGroup;
-			children = (
-				AFD92DD420EF8CFA0030D852 /* ThemeColor.swift */,
-			);
-			path = ThemeColor;
 			sourceTree = "<group>";
 		};
 		AFD92DD620EF92360030D852 /* APIConstants */ = {
@@ -696,7 +712,7 @@
 				AFD92DBD20EF46210030D852 /* UIColor.swift in Sources */,
 				AFD92DDE20EF92E30030D852 /* Result.swift in Sources */,
 				AFD92DED20EF95A40030D852 /* ImageManager.swift in Sources */,
-				AFD92DD520EF8CFA0030D852 /* ThemeColor.swift in Sources */,
+				AFD92DD520EF8CFA0030D852 /* ColourConstant.swift in Sources */,
 				AFD92D8320EF409C0030D852 /* AppDelegate.swift in Sources */,
 				AFD92DC420EF4E0D0030D852 /* ColoursViewCell.swift in Sources */,
 				AF4D9A2220F099D500FA6580 /* ActivityIndicator.swift in Sources */,

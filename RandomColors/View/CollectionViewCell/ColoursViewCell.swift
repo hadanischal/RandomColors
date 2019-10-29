@@ -62,7 +62,7 @@ class ColoursViewCell: UICollectionViewCell {
     }
 }
 
-extension ColoursViewCell: ReusableView{}
+extension ColoursViewCell: ReusableView {}
 //    override var isSelected: Bool{
 //        didSet{
 //            if self.isSelected{
