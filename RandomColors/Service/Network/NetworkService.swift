@@ -8,19 +8,31 @@
 
 import Foundation
 
+protocol NetworkingDataSource: class {
+    func loadData(urlString: String, completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask?
+    func loadDataWithParameters(urlString: String, parameters: [String: String]?, completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask?
+}
+
 final class NetworkService {
 
-    func loadData(urlString: String, session: URLSession = URLSession(configuration: .default), completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask? {
+    private var session: URLSession!
+
+    init(_ session: URLSession = URLSession(configuration: .default)) {
+        self.session = session
+    }
+
+    func loadData(urlString: String, completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask? {
         print("urlString:", urlString)
         guard let url = URL(string: urlString) else {
             completion(.failure(.network(string: "Wrong url format")))
             return nil
         }
         var request = NetworkMethod.request(method: .GET, url: url)
-        if let reachability = Reachability(), !reachability.isReachable {
+        if let reachability =  try? Reachability(),
+            reachability.connection == .unavailable {
             request.cachePolicy = .returnCacheDataDontLoad
         }
-        let task = session.dataTask(with: request) { (data, _, error) in
+        let task = self.session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 completion(.failure(.network(string: "An error occured during request :" + error.localizedDescription)))
                 return
@@ -33,7 +45,7 @@ final class NetworkService {
         return task
     }
 
-    func loadDataWithParameters(urlString: String, parameters: [String: String]?, session: URLSession = URLSession(configuration: .default), completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask? {
+    func loadDataWithParameters(urlString: String, parameters: [String: String]?, completion: @escaping (Result<Data, ErrorResult>) -> Void) -> URLSessionTask? {
         guard let url = URLComponents(string: urlString) else {
             completion(.failure(.network(string: "Wrong url format")))
             return nil
@@ -49,10 +61,11 @@ final class NetworkService {
         }
 
         var request = NetworkMethod.request(method: .GET, url: components.url!)
-        if let reachability = Reachability(), !reachability.isReachable {
+        if let reachability =  try? Reachability(),
+            reachability.connection == .unavailable {
             request.cachePolicy = .returnCacheDataDontLoad
         }
-        let task = session.dataTask(with: request) { (data, _, error) in
+        let task = self.session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 completion(.failure(.network(string: "An error occured during request :" + error.localizedDescription)))
                 return

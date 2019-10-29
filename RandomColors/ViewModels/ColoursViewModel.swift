@@ -16,7 +16,8 @@ class ColoursViewModel: ColoursViewModelProtocol {
     // MARK: - Output
     var onErrorHandling: ((ErrorResult?) -> Void)?
 
-    init(service: ColoursServiceCallProtocol? = ColoursServiceCall.shared, dataSource: GenericDataSource<ColoursModel>?) {
+    init(service: ColoursServiceCallProtocol? = ColoursServiceCall.shared,
+         dataSource: GenericDataSource<ColoursModel>?) {
         self.dataSource = dataSource
         self.service = service
     }
@@ -27,14 +28,7 @@ class ColoursViewModel: ColoursViewModelProtocol {
             onErrorHandling?(ErrorResult.custom(string: "Missing service"))
             return
         }
-        var endpoint = APIConstants.baseURLString
-
-        switch GeometryClassification.randomGeometry() {
-        case .circle:
-            endpoint = APIConstants.colorsURL
-        case .square:
-            endpoint = APIConstants.patternsURL
-        }
+        let endpoint = getEndPoint()
 
         service.fetchConverter(endpoint) { result in
             DispatchQueue.main.async {
@@ -51,4 +45,12 @@ class ColoursViewModel: ColoursViewModelProtocol {
         }
     }
 
+    private func getEndPoint() -> String {
+        switch GeometryClassification.randomGeometry() {
+        case .circle:
+            return APIConstants.colorsURL
+        case .square:
+            return APIConstants.patternsURL
+        }
+    }
 }

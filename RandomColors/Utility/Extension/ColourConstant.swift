@@ -1,5 +1,5 @@
 //
-//  ThemeColor.swift
+//  ColourConstant.swift
 //  RandomColors
 //
 //  Created by Nischal Hada on 7/6/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ThemeColor {
+extension UIColor {
     static var primary: UIColor {
         return UIColor(red: 0.122, green: 0.737, blue: 0.824, alpha: 1.00)
     }
@@ -31,22 +31,6 @@ enum ThemeColor {
 
     static var extraLightText: UIColor {
         return UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1)
-    }
-
-    static var white: UIColor {
-        return UIColor.white
-    }
-
-    static var blue: UIColor {
-        return UIColor.blue
-    }
-
-    static var green: UIColor {
-        return UIColor.green
-    }
-
-    static var red: UIColor {
-        return UIColor.red
     }
 
     static var buttonBackgroundColor: UIColor {

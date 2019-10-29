@@ -7,10 +7,11 @@
 //
 
 import Foundation
-//swiftlint:disable identifier_name
+
 public enum ReachabilityError: Error {
-    case FailedToCreateWithAddress(sockaddr_in)
-    case FailedToCreateWithHostname(String)
-    case UnableToSetCallback
-    case UnableToSetDispatchQueue
+    case failedToCreateWithAddress(sockaddr, Int32)
+    case failedToCreateWithHostname(String, Int32)
+    case unableToSetCallback(Int32)
+    case unableToSetDispatchQueue(Int32)
+    case unableToGetFlags(Int32)
 }
